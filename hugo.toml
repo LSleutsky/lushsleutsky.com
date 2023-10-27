@@ -1,0 +1,179 @@
+# Page settings
+
+baseURL = "http://lushsleutsky.com/"
+languageCode = "en-us"
+title = "Lush  Sleutsky | Software Engineer"
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[params]
+author = "Lush Sleutsky"
+description = "An online resume for prospective employers"
+primaryColor = "#355e3b"
+textPrimaryColor = "#292929"
+
+  [params.profile]
+  enable = true
+  name = "Lush Sleutsky"
+  tagline = "Senior Software Engineer"
+  avatar = "avatar.png"
+
+  [params.contact]
+  enable = true
+  location = "Philadelphia, PA"
+
+    [[params.contact.list]]
+    icon = "fas fa-phone-square"
+    url = "tel:267-307-2019"
+    text = "267-307-2019"
+    [[params.contact.list]]
+    icon = "fas fa-envelope-square"
+    url = "mailto:lushsleutsky@gmail.com"
+    text = "lushsleutsky@gmail.com"
+    [[params.contact.list]]
+    icon = "fas fa-globe"
+    url = "http://lushsleutsky.com"
+    text = "lushsleutsky.com"
+
+  [params.skills]
+  enable = true
+
+    [[params.skills.list]]
+    title = "Technical"
+
+      [[params.skills.list.items]]
+      details = "JavaScript/TypeScript"
+      [[params.skills.list.items]]
+      details = "React/Redux/Next.js"
+      [[params.skills.list.items]]
+      details = "Node.js/Express"
+      [[params.skills.list.items]]
+      details = "Webpack/Babel"
+      [[params.skills.list.items]]
+      details = "HTML/JSX/Templating"
+      [[params.skills.list.items]]
+      details = "CSS/Sass/Less/Tailwind"
+      [[params.skills.list.items]]
+      details = "Bootstrap/Material"
+      [[params.skills.list.items]]
+      details = "AWS/Firebase/DevOps"
+
+    [[params.skills.list]]
+    title = "Professional"
+
+      [[params.skills.list.items]]
+      details = "Effective Communication"
+      [[params.skills.list.items]]
+      details = "Problem Solving"
+      [[params.skills.list.items]]
+      details = "Analyzation and Collaboration"
+      [[params.skills.list.items]]
+      details = "Debugging"
+      [[params.skills.list.items]]
+      details = "Web Accessibility"
+
+  [params.education]
+  enable = true
+
+    [[params.education.list]]
+    degree = "MSc in Computer Science"
+    university = "University College London"
+    dates = "2010 - 2011"
+    [[params.education.list]]
+    degree = "BSc Maths and Physics"
+    university = "Imperial College London"
+    dates = "2007 - 2010"
+
+  [params.languages]
+  enable = true
+
+    [[params.languages.list]]
+    name = "English"
+    level = "Native"
+    [[params.languages.list]]
+    name = "Russian"
+    level = "Native"
+
+  [params.interests]
+  enable = true
+
+    [[params.interests.list]]
+    name = "Contact Sports"
+    [[params.interests.list]]
+    name = "The Universe"
+    [[params.interests.list]]
+    name = "Technology"
+    [[params.interests.list]]
+    name = "Artifical Intelligence"
+
+  [params.summary]
+    enable = true
+    text = "I specialize in front-end development, with an emphasis on React. I am driven by a continuous learning ethos, and have spent over a decade honing a pretty commendable skill set, which has allowed me to produce high-quality deliverables for organizations both small and large, as well as enterprise level. I am always looking for new challenges - whether professionally or personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid 90s, my love and passion for technology and engineering has only grown exponentially."
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.list]]
+    title = "Senior Software Engineer"
+    dates = "2023"
+    company = "Hovr, Inc"
+    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
+
+      [[params.experience.list.items]]
+      details = "Lorem ipsum dolor sit amet, consectetuer."
+      [[params.experience.list.items]]
+      details = "Aenean commodo ligula eget dolor."
+      [[params.experience.list.items]]
+      details = "Etiam ultricies nisi vel augue."
+
+    [[params.experience.list]]
+    title = "Staff Software Engineer"
+    dates = "2021-2023"
+    company = "ASAP, Inc."
+    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel."
+
+      [[params.experience.list.items]]
+      details = "Lorem ipsum dolor sit amet, consectetuer."
+      [[params.experience.list.items]]
+      details = "Aenean commodo ligula eget dolor."
+
+    [[params.experience.list]]
+    title = "User Interface Developer"
+    dates = "2018 - 2021"
+    company = "Comcast Business"
+    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+    [[params.experience.list]]
+    title = "MEAN Stack Application Developer"
+    dates = "2017-2018"
+    company = "Angus Energy"
+    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+
+    [[params.experience.list]]
+    title = "Principal Web Engineer"
+    dates = "2012-2017"
+    company = "Three Brothers, Inc."
+    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+    [[params.experience.list]]
+    title = "Frontend Web Developer"
+    dates = "2009 - 2012"
+    company = "Shycon Design"
+    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+
+  [params.social]
+  enable = true
+
+    [[params.social.list]]
+    icon = "fab fa-github-square"
+    url = "//github.com/username"
+    title = "username"
+
+      [[params.social.list]]
+      icon = "fab fa-linkedin"
+      url = "//linkedin.com/in/username"
+      title = "username"
+      [[params.social.list]]
+      icon = "fab fa-twitter-square"
+      url = "//twitter.com/username"
+      title = "@username"
