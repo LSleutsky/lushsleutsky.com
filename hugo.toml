@@ -73,16 +73,16 @@ textPrimaryColor = "#292929"
       details = "Web Accessibility"
 
   [params.education]
-  enable = true
+  enable = false
 
     [[params.education.list]]
-    degree = "MSc in Computer Science"
-    university = "University College London"
-    dates = "2010 - 2011"
+    degree = "Computer Science"
+    university = "Temple University"
+    dates = "2003-2004"
     [[params.education.list]]
-    degree = "BSc Maths and Physics"
-    university = "Imperial College London"
-    dates = "2007 - 2010"
+    degree = "Computer and Information Sciences"
+    university = "Bucks County Community College"
+    dates = "2001-2003"
 
   [params.languages]
   enable = true
@@ -104,11 +104,11 @@ textPrimaryColor = "#292929"
     [[params.interests.list]]
     name = "Technology"
     [[params.interests.list]]
-    name = "Artifical Intelligence"
+    name = "Artificial Intelligence"
 
   [params.summary]
     enable = true
-    text = "I specialize in front-end development, with an emphasis on React. I am driven by a continuous learning ethos, and have spent over a decade honing a pretty commendable skill set, which has allowed me to produce high-quality deliverables for organizations both small and large, as well as enterprise level. I am always looking for new challenges - whether professionally or personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid 90s, my love and passion for technology and engineering has only grown exponentially."
+    text = "I specialize in frontend development - with an emphasis on React - and am driven by a continuous learning ethos. Having spent over a decade honing a pretty laudable skill set has allowed me to produce high-quality deliverables for organizations small and large, as well as enterprise level. I am always looking for new challenges - both professionally and personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid 90s, my fervor and enthusiasm for technology and engineering has continued to grow exponentially."
 
   [params.experience]
   enable = true
@@ -117,63 +117,81 @@ textPrimaryColor = "#292929"
     title = "Senior Software Engineer"
     dates = "2023"
     company = "Hovr, Inc"
-    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
+    details = "A no-code solution that applies a second layer inteface over top an existing website, allowing the addition of anchors, triggers, highlights, and different effects on any element, granularly down to a single letter. This provides content-in-context to an end user's journey, providing anything from videos, images, downloadable content - and more - all without needing to leave the current flow."
 
       [[params.experience.list.items]]
-      details = "Lorem ipsum dolor sit amet, consectetuer."
+      details = "Engineered central frontend features with React and Redux Toolkit, built atop the Shdow DOM."
       [[params.experience.list.items]]
-      details = "Aenean commodo ligula eget dolor."
+      details = "Delivered long-awaited feature-gating functionality, allowing payment tiers for specific features."
       [[params.experience.list.items]]
-      details = "Etiam ultricies nisi vel augue."
+      details = "Furthered repositories in becoming ADA-compliant, allowing onboarding of major clients."
 
     [[params.experience.list]]
     title = "Staff Software Engineer"
     dates = "2021-2023"
     company = "ASAP, Inc."
-    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel."
+    details = "High-traffic food delivery service primarily targeting the under-served regions of the US, spanning 3 independent sets of web and mobile apps, which would eventually culminate in a Greenfield project combining all essential features from each OpCo into one stylish, modern new website."
 
       [[params.experience.list.items]]
-      details = "Lorem ipsum dolor sit amet, consectetuer."
+      details = "Overhauled primary React and Redux codebase, improving developer experience and efficiency."
       [[params.experience.list.items]]
-      details = "Aenean commodo ligula eget dolor."
+      details = "Instituted performance solutions, elevating raw site speed and boosting fiscal projections."
+      [[params.experience.list.items]]
+      details = "Led Greenfield project building a new website in Next.js, TypeScrpt, and Tailwind CSS."
 
     [[params.experience.list]]
     title = "User Interface Developer"
     dates = "2018 - 2021"
     company = "Comcast Business"
-    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    details = "A rapid-iteration, Agile Scrum enterprise environment for building and maintaining Xfinity's internet, voice, and TV options for Business Serviceas Delivery customers."
+
+      [[params.experience.list.items]]
+      details = "Merged over 30 modular, reusable components into Storybook frontend workshop."
+      [[params.experience.list.items]]
+      details = "Boosted test coverage for client-side products to a hard minimum, future-proofing products."
 
     [[params.experience.list]]
-    title = "MEAN Stack Application Developer"
+    title = "Full Stack Developer"
     dates = "2017-2018"
     company = "Angus Energy"
-    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+    details = "A powerful and fully customizable SaaS logistics and analytics web application for the fuel delivery services sector, consiting of a dashboard with built-to-order widgets with a ton of features."
+
+      [[params.experience.list.items]]
+      details = "Migrated Express.js monolith on AngularJS to Anguular 6 with Docker, improving scalability."
+      [[params.experience.list.items]]
+      details = "Captured and converted real-time IoT data from in-field systems, and converted to visual KPIs."
 
     [[params.experience.list]]
     title = "Principal Web Engineer"
     dates = "2012-2017"
     company = "Three Brothers, Inc."
-    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    details = "Modern websites for home services industry that were built based on direct specifications from working with clients from top-to-bottom."
+
+      [[params.experience.list.items]]
+      details = "Launched and maintained responsive websites, incorporating jQuery, AngularJS, and Backbone.js"
 
     [[params.experience.list]]
     title = "Frontend Web Developer"
     dates = "2009 - 2012"
     company = "Shycon Design"
-    details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
+    details = "Wireframing and building eCommerce websites from a diverse set of clients and products, as well as providing SEO and Google AdWords campaigns."
+
+      [[params.experience.list.items]]
+      details = "Developed cross-browser compliant websites, minimizing bugs and optimizing data."
 
   [params.social]
   enable = true
 
     [[params.social.list]]
     icon = "fab fa-github-square"
-    url = "//github.com/username"
-    title = "username"
+    url = "//github.com/lsleutsky"
+    title = "GitHub"
 
       [[params.social.list]]
       icon = "fab fa-linkedin"
-      url = "//linkedin.com/in/username"
-      title = "username"
+      url = "//linkedin.com/in/lushsleutsky"
+      title = "LinkedIn"
       [[params.social.list]]
       icon = "fab fa-twitter-square"
-      url = "//twitter.com/username"
-      title = "@username"
+      url = "//twitter.com/lsleutsky"
+      title = "@LSleutsky"
