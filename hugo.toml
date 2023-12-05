@@ -162,6 +162,17 @@ textPrimaryColor = "#292929"
       details = "Captured and converted real-time IoT data from in-field systems, and converted to visual KPIs."
 
     [[params.experience.list]]
+    title = "Solutions Developer"
+    dates = "2014-2015"
+    company = "Kids Live Safe"
+    details = "An online resource providing critical information to the community in regards to child predators, sex offenders, and other threats, surpassing information found on most government-based databases."
+
+      [[params.experience.list.items]]
+      details = "Refined and reconciled unused dead frontend code to provide a clean working codebase."
+      [[params.experience.list.items]]
+      details = "Conceptualized and wrote adaptive HTML e-mail templates to further marketing campaigns."
+
+    [[params.experience.list]]
     title = "Principal Web Engineer"
     dates = "2012-2017"
     company = "Three Brothers, Inc."
