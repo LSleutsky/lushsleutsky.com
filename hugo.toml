@@ -52,11 +52,17 @@ textPrimaryColor = "#292929"
       [[params.skills.list.items]]
       details = "HTML/JSX/Templating"
       [[params.skills.list.items]]
-      details = "CSS/Sass/Less/Tailwind"
+      details = "CSS/Sass/LESS/Tailwind"
+      [[params.skills.list.items]]
+      details = "CSS-in-JS"
       [[params.skills.list.items]]
       details = "Bootstrap/Material"
       [[params.skills.list.items]]
       details = "AWS/Firebase/DevOps"
+      [[params.skills.list.items]]
+      details = "Git/CI/CD"
+      [[params.skills.list.items]]
+      details = "Web Accessibility"
 
     [[params.skills.list]]
     title = "Professional"
@@ -70,7 +76,9 @@ textPrimaryColor = "#292929"
       [[params.skills.list.items]]
       details = "Debugging"
       [[params.skills.list.items]]
-      details = "Web Accessibility"
+      details = "Multitasking"
+      [[params.skills.list.items]]
+      details = "Time management"
 
   [params.education]
   enable = false
@@ -98,13 +106,15 @@ textPrimaryColor = "#292929"
   enable = true
 
     [[params.interests.list]]
+    name = "Technology"
+    [[params.interests.list]]
+    name = "Artificial Intelligence"
+    [[params.interests.list]]
     name = "Contact Sports"
     [[params.interests.list]]
     name = "The Universe"
     [[params.interests.list]]
-    name = "Technology"
-    [[params.interests.list]]
-    name = "Artificial Intelligence"
+    name = "Norse Mythology"
 
   [params.summary]
     enable = true
@@ -168,7 +178,7 @@ textPrimaryColor = "#292929"
     details = "An online resource providing critical information to the community in regards to child predators, sex offenders, and other threats, surpassing information found on most government-based databases."
 
       [[params.experience.list.items]]
-      details = "Refined and reconciled unused dead frontend code to provide a clean working codebase."
+      details = "Examined, modernized, and optimized legacy frontend code with best practice paradigms."
       [[params.experience.list.items]]
       details = "Conceptualized and wrote adaptive HTML e-mail templates to further marketing campaigns."
 

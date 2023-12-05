@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Building app"
+hugo
+
+echo "Deploying files to server"
+rsync -avP public/ lush@172.104.13.52:/var/www/html/portfolio/lushsleutsky.com/
+echo "Deployment complete"
