@@ -10,7 +10,7 @@ googleAnalytics = "UA-XXXXXXX-Y"
 author = "Lush Sleutsky"
 description = "An online resume for prospective employers"
 primaryColor = "#355e3b"
-textPrimaryColor = "#292929"
+textPrimaryColor = "#ffffff"
 
   [params.profile]
   enable = true
@@ -30,10 +30,10 @@ textPrimaryColor = "#292929"
     icon = "fas fa-envelope-square"
     url = "mailto:lushsleutsky@gmail.com"
     text = "lushsleutsky@gmail.com"
-    [[params.contact.list]]
-    icon = "fas fa-globe"
-    url = "http://lushsleutsky.com"
-    text = "lushsleutsky.com"
+    # [[params.contact.list]]
+    # icon = "fas fa-globe"
+    # url = "http://lushsleutsky.com"
+    # text = "lushsleutsky.com"
 
   [params.skills]
   enable = true
@@ -52,7 +52,9 @@ textPrimaryColor = "#292929"
       [[params.skills.list.items]]
       details = "HTML/JSX/Templating"
       [[params.skills.list.items]]
-      details = "CSS/Sass/LESS/Tailwind"
+      details = "CSS/SCSS/Sass/LESS"
+      [[params.skills.list.items]]
+      details = "Tailwind CSS"
       [[params.skills.list.items]]
       details = "CSS-in-JS"
       [[params.skills.list.items]]
@@ -62,7 +64,7 @@ textPrimaryColor = "#292929"
       [[params.skills.list.items]]
       details = "Git/CI/CD"
       [[params.skills.list.items]]
-      details = "Web Accessibility"
+      details = "Accessibility/Compliance"
 
     [[params.skills.list]]
     title = "Professional"
@@ -127,12 +129,14 @@ textPrimaryColor = "#292929"
     title = "Senior Software Developer"
     dates = "2024"
     company = "SLP Toolkit"
-    details = "A Next.js web-based service for speech language pathologists, providing tools extending OpenAI and Natural Language Processing for therapists to manage caseloads, create/view students and/or teachers, plan events, and much more."
+    details = "A Next.js web-based service for Speech Language Pathologists, providing tools extending OpenAI and Natural Language Processing for therapists to manage caseloads, create/view students and/or teachers, plan events, and much more."
 
       [[params.experience.list.items]]
-      details = "Enhanced and refined dedicated Firebase Cloud Function to parse user-entered text to return AI-based action."
+      details = "Built 5 new cutting-edge UI features surrounding retrieving Firestore data via AI assistance."
       [[params.experience.list.items]]
-      details = "Extended and mapped Firestore data through React Context."
+      details = "Enhanced Firebase Cloud Functions to parse user-entered text to return AI-based action."
+      [[params.experience.list.items]]
+      details = "Incorporated OpenAI and Natural Language Processing functionality into UI features."
 
     [[params.experience.list]]
     title = "Senior Software Engineer"
@@ -164,7 +168,7 @@ textPrimaryColor = "#292929"
     title = "User Interface Developer"
     dates = "2018 - 2021"
     company = "Comcast Business"
-    details = "A rapid-iteration, Agile Scrum enterprise environment for building and maintaining Xfinity's internet, voice, and TV options for Business Serviceas Delivery customers."
+    details = "A rapid-iteration, Agile Scrum enterprise environment for building and maintaining Xfinity's internet, voice, and TV options for Business Services Delivery customers."
 
       [[params.experience.list.items]]
       details = "Merged over 30 modular, reusable components into Storybook frontend workshop."
@@ -178,7 +182,7 @@ textPrimaryColor = "#292929"
     details = "A powerful and fully customizable SaaS logistics and analytics web application for the fuel delivery services sector, consiting of a dashboard with built-to-order widgets with a ton of features."
 
       [[params.experience.list.items]]
-      details = "Migrated Express.js monolith on AngularJS to Anguular 6 with Docker, improving scalability."
+      details = "Migrated Express.js monolith on AngularJS to Angular 6 with Docker, improving scalability."
       [[params.experience.list.items]]
       details = "Captured and converted real-time IoT data from in-field systems, and converted to visual KPIs."
 
