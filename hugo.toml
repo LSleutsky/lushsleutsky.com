@@ -124,6 +124,17 @@ textPrimaryColor = "#292929"
   enable = true
 
     [[params.experience.list]]
+    title = "Senior Software Developer"
+    dates = "2024"
+    company = "SLP Toolkit"
+    details = "A Next.js web-based service for speech language pathologists, providing tools extending OpenAI and Natural Language Processing for therapists to manage caseloads, create/view students and/or teachers, plan events, and much more."
+
+      [[params.experience.list.items]]
+      details = "Enhanced and refined dedicated Firebase Cloud Function to parse user-entered text to return AI-based action."
+      [[params.experience.list.items]]
+      details = "Extended and mapped Firestore data through React Context."
+
+    [[params.experience.list]]
     title = "Senior Software Engineer"
     dates = "2023"
     company = "Hovr, Inc"
