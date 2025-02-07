@@ -44,9 +44,9 @@ textPrimaryColor = "#ffffff"
       [[params.skills.list.items]]
       details = "JavaScript/TypeScript"
       [[params.skills.list.items]]
-      details = "React/Redux/Next.js"
+      details = "React/Redux/Next.js/Vite"
       [[params.skills.list.items]]
-      details = "Node.js/Express"
+      details = "Node.js/Express/Bun"
       [[params.skills.list.items]]
       details = "Webpack/Babel"
       [[params.skills.list.items]]
