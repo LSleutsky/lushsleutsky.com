@@ -132,11 +132,11 @@ textPrimaryColor = "#ffffff"
     details = "I have designed a plethora of different user interfaces, responsive design layouts, and SPAs that are geared and optimized for heavy traffic and page views."
 
       [[params.experience.list.items]]
-      details = "Developed various user interfaces, responsive design layouts, and SPAs that ensured high traffic and page views, using the latest React technology, including React Router 7, Next.js, and Vite, with Node.js/Express backends."
+      details = "Developed various user interfaces using React Router 7, Next.js, Vite, Node.js/Express"
       [[params.experience.list.items]]
-      details = "Enhanced website performance by reducing page load times by 7+ seconds and increasing user retention by upwards of 40%."
+      details = "Reducing page load times by 7+ seconds and increasing user retention by upwards of 40%."
       [[params.experience.list.items]]
-      details = "Integrated eCommerce functionality into websites, boosting user flows and UX, expanding online sales almost instantly."
+      details = "Integrated eCommerce functionality into websites, boosting user flows and UX."
       [[params.experience.list.items]]
       details = "Launched successful SEO campaigns that directly affected revenue increases by over 20%."
 
