@@ -30,10 +30,6 @@ textPrimaryColor = "#ffffff"
     icon = "fas fa-envelope-square"
     url = "mailto:lushsleutsky@gmail.com"
     text = "lushsleutsky@gmail.com"
-    # [[params.contact.list]]
-    # icon = "fas fa-globe"
-    # url = "http://lushsleutsky.com"
-    # text = "lushsleutsky.com"
 
   [params.skills]
   enable = true
@@ -46,7 +42,7 @@ textPrimaryColor = "#ffffff"
       [[params.skills.list.items]]
       details = "React/Redux/Next.js/Vite"
       [[params.skills.list.items]]
-      details = "Node.js/Express/Bun"
+      details = "Node.js/Express"
       [[params.skills.list.items]]
       details = "Webpack/Babel"
       [[params.skills.list.items]]
@@ -120,7 +116,7 @@ textPrimaryColor = "#ffffff"
 
   [params.summary]
     enable = true
-    text = "I specialize in frontend development - with an emphasis on React - and am driven by a continuous learning ethos. Having spent over a decade honing a pretty laudable skill set has allowed me to produce high-quality deliverables for organizations small and large, as well as enterprise level. I am always looking for new challenges - both professionally and personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid 90s, my fervor and enthusiasm for technology and engineering has continued to grow exponentially."
+    text = "I am not your typical sit-in-a-cubicle type of guy. I am driven by a continuous learning ethos and thrive in fast-paced environments where teams communicate, collaborate, and express ideas. I don't want to do things just cause everyone else is doing it, but would instead rather make trends and push boundaries. I'm on a mission of constant improvement - for myself and my team members. Having spent over a decade honing a pretty laudable skill set has allowed me to produce high-quality deliverables for organizations small and large, as well as enterprise level. This experience has afforded me the opportunity to be involved with both design and development, working with and spanning multiple departments. I am always looking for new challenges - both professionally and personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid 90s, my fervor and enthusiasm for technology and engineering has continued to grow exponentially."
 
   [params.experience]
   enable = true
