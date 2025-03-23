@@ -51,7 +51,7 @@ textPrimaryColor = "#ffffff"
       details = "Node.js | Express.js"
 
       [[params.skills.list.items]]
-      details = "Webpack | Babel | Bundling"
+      details = "Configurations | Bundling"
 
       [[params.skills.list.items]]
       details = "HTML | JSX | Templating"
@@ -84,7 +84,13 @@ textPrimaryColor = "#ffffff"
       details = "Problem Solving"
 
       [[params.skills.list.items]]
-      details = "Analyzation and Collaboration"
+      details = "Cross-Team Collaboration"
+
+      [[params.skills.list.items]]
+      details = "Process Improvement"
+
+      [[params.skills.list.items]]
+      details = "Stakeholder Engagement"
 
       [[params.skills.list.items]]
       details = "Debugging"
@@ -93,7 +99,7 @@ textPrimaryColor = "#ffffff"
       details = "Multitasking"
 
       [[params.skills.list.items]]
-      details = "Time Management"
+      details = "Time & Project Management"
 
   [params.education]
   enable = false
@@ -151,13 +157,11 @@ textPrimaryColor = "#ffffff"
     details = "I have designed a plethora of different user interfaces, responsive design layouts, and SPAs that are geared and optimized for heavy traffic and page views."
 
       [[params.experience.list.items]]
-      details = "Developed various user interfaces using React Router 7, Next.js, Vite, Node.js/Express"
+      details = "Developed various user interfaces using React 19, React Router 7, Next.js, and Node.js/Express"
       [[params.experience.list.items]]
-      details = "Reducing page load times by 7+ seconds and increasing user retention by upwards of 40%."
+      details = "Integrated eCommerce functionality into websites, augmenting user flows and experience."
       [[params.experience.list.items]]
-      details = "Integrated eCommerce functionality into websites, boosting user flows and UX."
-      [[params.experience.list.items]]
-      details = "Launched successful SEO campaigns that directly affected revenue increases by over 20%."
+      details = "Launched successful SEO campaigns that directly contributed to revenue increases."
 
     [[params.experience.list]]
     title = "Senior Software Developer"
@@ -179,7 +183,7 @@ textPrimaryColor = "#ffffff"
     details = "A no-code solution that applies a second layer inteface over top an existing website, allowing the addition of anchors, triggers, highlights, and different effects on any element, granularly down to a single letter. This provides content-in-context to an end user's journey, providing anything from videos, images, downloadable content - and more - all without needing to leave the current flow."
 
       [[params.experience.list.items]]
-      details = "Engineered central frontend features with React and Redux Toolkit, built atop the Shdow DOM."
+      details = "Engineered central frontend features with React and Redux Toolkit, built atop the Shadow DOM."
       [[params.experience.list.items]]
       details = "Delivered long-awaited feature-gating functionality, allowing payment tiers for specific features."
       [[params.experience.list.items]]
