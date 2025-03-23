@@ -25,11 +25,12 @@ textPrimaryColor = "#ffffff"
     [[params.contact.list]]
     icon = "fas fa-phone-square"
     url = "tel:267-307-2019"
-    text = "267-307-2019"
+    text = "(267) 307-2019"
+
     [[params.contact.list]]
     icon = "fas fa-envelope-square"
     url = "mailto:lushsleutsky@gmail.com"
-    text = "lushsleutsky@gmail.com"
+    text = "lush.sleutsky@gmail.com"
 
   [params.skills]
   enable = true
@@ -38,45 +39,61 @@ textPrimaryColor = "#ffffff"
     title = "Technical"
 
       [[params.skills.list.items]]
-      details = "JavaScript/TypeScript"
+      details = "JavaScript | TypeScript"
+
       [[params.skills.list.items]]
-      details = "React/Redux/Next.js/Vite"
+      details = "React.js | Next.js"
+
       [[params.skills.list.items]]
-      details = "Node.js/Express"
+      details = "State Management"
+
       [[params.skills.list.items]]
-      details = "Webpack/Babel"
+      details = "Node.js | Express.js"
+
       [[params.skills.list.items]]
-      details = "HTML/JSX/Templating"
+      details = "Webpack | Babel | Bundling"
+
       [[params.skills.list.items]]
-      details = "CSS/SCSS/Sass/LESS"
+      details = "HTML | JSX | Templating"
+
       [[params.skills.list.items]]
-      details = "Tailwind CSS"
+      details = "CSS | SCSS | Sass | LESS"
+
       [[params.skills.list.items]]
-      details = "CSS-in-JS"
+      details = "Tailwind CSS | CSS-in-JS"
+
       [[params.skills.list.items]]
-      details = "Bootstrap/Material"
+      details = "Bootstrap | Material"
+
       [[params.skills.list.items]]
-      details = "AWS/Firebase/DevOps"
+      details = "AWS | Firebase | DevOps"
+
       [[params.skills.list.items]]
-      details = "Git/CI/CD"
+      details = "Version Control | CI/CD"
+
       [[params.skills.list.items]]
-      details = "Accessibility/Compliance"
+      details = "Accessibility | Compliance"
 
     [[params.skills.list]]
     title = "Professional"
 
       [[params.skills.list.items]]
       details = "Effective Communication"
+
       [[params.skills.list.items]]
       details = "Problem Solving"
+
       [[params.skills.list.items]]
       details = "Analyzation and Collaboration"
+
       [[params.skills.list.items]]
       details = "Debugging"
+
       [[params.skills.list.items]]
       details = "Multitasking"
+
       [[params.skills.list.items]]
-      details = "Time management"
+      details = "Time Management"
 
   [params.education]
   enable = false
@@ -85,6 +102,7 @@ textPrimaryColor = "#ffffff"
     degree = "Computer Science"
     university = "Temple University"
     dates = "2003-2004"
+
     [[params.education.list]]
     degree = "Computer and Information Sciences"
     university = "Bucks County Community College"
@@ -96,6 +114,7 @@ textPrimaryColor = "#ffffff"
     [[params.languages.list]]
     name = "English"
     level = "Native"
+
     [[params.languages.list]]
     name = "Russian"
     level = "Native"
@@ -105,18 +124,22 @@ textPrimaryColor = "#ffffff"
 
     [[params.interests.list]]
     name = "Technology"
+
     [[params.interests.list]]
     name = "Artificial Intelligence"
+
     [[params.interests.list]]
     name = "Contact Sports"
+
     [[params.interests.list]]
-    name = "The Universe"
+    name = "The Cosmos"
+
     [[params.interests.list]]
     name = "Norse Mythology"
 
   [params.summary]
     enable = true
-    text = "I am not your typical sit-in-a-cubicle type of guy. I am driven by a continuous learning ethos and thrive in fast-paced environments where teams communicate, collaborate, and express ideas. I don't want to do things just cause everyone else is doing it, but would instead rather make trends and push boundaries. I'm on a dedicated mission of constant improvement for myself and my peers. Having spent over a decade honing a pretty laudable skill set has allowed me to produce high-quality deliverables for organizations small and large, as well as enterprise level. This experience has afforded me the opportunity to be involved with both design and development, working with and spanning multiple departments. I am always looking for new challenges - both professionally and personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid 90s, my fervor and enthusiasm for technology and engineering has continued to grow exponentially."
+    text = "I am not your typical sit-in-a-cubicle type of guy. I am driven by a continuous learning ethos and thrive in fast-paced environments where teams communicate, collaborate, and express ideas. I don't want to do things just cause everyone else is doing it, but would instead rather make trends and push boundaries. I'm on a dedicated mission of constant improvement for myself and my peers. Having spent around a decade-and-a-half honing a pretty laudable skill set has allowed me to produce high-quality deliverables for organizations both small and large, as well as enterprise level. This experience has afforded me the opportunity to be involved with both design and development, working with and spanning multiple departments. I am always seeking new challenges - both professionally and personally - and ever since I built my very first web page dedicated to Michael Jordan back in the mid-to-late 90s, my fervor and enthusiasm for technology and engineering has continued to grow and evolve exponentially."
 
   [params.experience]
   enable = true
@@ -234,11 +257,7 @@ textPrimaryColor = "#ffffff"
     url = "//github.com/lsleutsky"
     title = "GitHub"
 
-      [[params.social.list]]
-      icon = "fab fa-linkedin"
-      url = "//linkedin.com/in/lushsleutsky"
-      title = "LinkedIn"
-      [[params.social.list]]
-      icon = "fab fa-twitter-square"
-      url = "//twitter.com/lsleutsky"
-      title = "@LSleutsky"
+    [[params.social.list]]
+    icon = "fab fa-linkedin"
+    url = "//linkedin.com/in/lushsleutsky"
+    title = "LinkedIn"
