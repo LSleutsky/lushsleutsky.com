@@ -45,6 +45,9 @@ textPrimaryColor = "#ffffff"
       details = "React.js | Next.js"
 
       [[params.skills.list.items]]
+      details = "React Native | Expo"
+
+      [[params.skills.list.items]]
       details = "State Management"
 
       [[params.skills.list.items]]
@@ -93,7 +96,7 @@ textPrimaryColor = "#ffffff"
       details = "Stakeholder Engagement"
 
       [[params.skills.list.items]]
-      details = "Debugging"
+      details = "Debugging and Testing"
 
       [[params.skills.list.items]]
       details = "Multitasking"
@@ -154,7 +157,7 @@ textPrimaryColor = "#ffffff"
     title = "Senior Software Developer"
     dates = "2025 - Present"
     company = "LifeLens Technologies, Inc."
-    details = "A pioneer in innovative devices for personal health monitoring and tracking."
+    details = "A pioneer in innovative devices for personal health monitoring and tracking, aiming to revolutionize physiologic monitoring for patients remotely and in the hospital."
 
       [[params.experience.list.items]]
       details = "Bootstrapped a Greenfield project for pilot consumer medical sleep study using React Native."
@@ -170,7 +173,7 @@ textPrimaryColor = "#ffffff"
     details = "I have designed a plethora of different user interfaces, responsive design layouts, and SPAs that are geared and optimized for heavy traffic and page views."
 
       [[params.experience.list.items]]
-      details = "Developed various user interfaces using React 19, React Router 7, Next.js, and Node.js/Express."
+      details = "Developed user interfaces using React 19, React Router 7, Next.js 15, and Node.js/Express."
       [[params.experience.list.items]]
       details = "Integrated eCommerce functionality into websites, augmenting user flows and experience."
       [[params.experience.list.items]]
@@ -183,7 +186,7 @@ textPrimaryColor = "#ffffff"
     details = "A Next.js web-based service for Speech Language Pathologists, providing tools extending OpenAI and Natural Language Processing for therapists to manage caseloads, create/view students and/or teachers, plan events, and much more."
 
       [[params.experience.list.items]]
-      details = "Built 5 new cutting-edge UI features surrounding retrieving Firestore data via AI assistance."
+      details = "Built 5 new cutting-edge UI features surrounding retrieving Firestore data for AI functionality."
       [[params.experience.list.items]]
       details = "Enhanced Firebase Cloud Functions to parse user-entered text to return AI-based action."
       [[params.experience.list.items]]
