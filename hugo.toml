@@ -150,6 +150,19 @@ textPrimaryColor = "#ffffff"
   [params.experience]
   enable = true
 
+  [[params.experience.list]]
+    title = "Senior Software Developer"
+    dates = "2025 - Present"
+    company = "LifeLens Technologies, Inc."
+    details = "A pioneer in innovative devices for personal health monitoring and tracking."
+
+      [[params.experience.list.items]]
+      details = "Bootstrapped a Greenfield project for pilot consumer medical sleep study using React Native."
+      [[params.experience.list.items]]
+      details = "Integrated Bluetooth Low Energy mechanism with TypeScript for real-time read/write exchange."
+      [[params.experience.list.items]]
+      details = "Transpile live, updatable sensor data into functional React Native animated charts and graphs."
+
     [[params.experience.list]]
     title = "Senior Web Engineer"
     dates = "2024 - Present"
@@ -157,7 +170,7 @@ textPrimaryColor = "#ffffff"
     details = "I have designed a plethora of different user interfaces, responsive design layouts, and SPAs that are geared and optimized for heavy traffic and page views."
 
       [[params.experience.list.items]]
-      details = "Developed various user interfaces using React 19, React Router 7, Next.js, and Node.js/Express"
+      details = "Developed various user interfaces using React 19, React Router 7, Next.js, and Node.js/Express."
       [[params.experience.list.items]]
       details = "Integrated eCommerce functionality into websites, augmenting user flows and experience."
       [[params.experience.list.items]]
