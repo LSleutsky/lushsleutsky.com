@@ -164,7 +164,7 @@ textPrimaryColor = "#ffffff"
       [[params.experience.list.items]]
       details = "Integrated Bluetooth Low Energy mechanism with TypeScript for real-time read/write exchange."
       [[params.experience.list.items]]
-      details = "Transpile live, updatable sensor data into functional React Native animated charts and graphs."
+      details = "Architected a cross-platform React Native Storybook UI kit for web and mobile distribution."
 
     [[params.experience.list]]
     title = "Senior Web Engineer"
