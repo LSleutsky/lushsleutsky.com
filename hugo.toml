@@ -165,6 +165,8 @@ textPrimaryColor = "#ffffff"
       details = "Integrated Bluetooth Low Energy mechanism with TypeScript for real-time read/write exchange."
       [[params.experience.list.items]]
       details = "Architected a cross-platform React Native Storybook UI kit for web and mobile distribution."
+      [[params.experience.list.items]]
+      details = "Established  comprehensive test suite with Jest and React Testing Library integrated into CI/CD."
 
     [[params.experience.list]]
     title = "Senior Web Engineer"
@@ -219,7 +221,7 @@ textPrimaryColor = "#ffffff"
       details = "Led Greenfield project building a new website in Next.js, TypeScrpt, and Tailwind CSS."
 
     [[params.experience.list]]
-    title = "User Interface Developer"
+    title = "Senior User Interface Developer"
     dates = "2018 - 2021"
     company = "Comcast Business"
     details = "A rapid-iteration, Agile Scrum enterprise environment for building and maintaining Xfinity's internet, voice, and TV options for Business Services Delivery customers."
