@@ -141,7 +141,7 @@ textPrimaryColor = "#ffffff"
     name = "Contact Sports"
 
     [[params.interests.list]]
-    name = "The Cosmos"
+    name = "Cosmology"
 
     [[params.interests.list]]
     name = "Norse Mythology"
@@ -170,7 +170,7 @@ textPrimaryColor = "#ffffff"
 
     [[params.experience.list]]
     title = "Senior Web Engineer"
-    dates = "2024 - Present"
+    dates = "2023 - Present"
     company = "Freelance Developer"
     details = "I have designed a plethora of different user interfaces, responsive design layouts, and SPAs that are geared and optimized for heavy traffic and page views."
 
@@ -180,19 +180,10 @@ textPrimaryColor = "#ffffff"
       details = "Integrated eCommerce functionality into websites, augmenting user flows and experience."
       [[params.experience.list.items]]
       details = "Launched successful SEO campaigns that directly contributed to revenue increases."
-
-    [[params.experience.list]]
-    title = "Senior Software Developer"
-    dates = "2024"
-    company = "SLP Toolkit"
-    details = "A Next.js web-based service for Speech Language Pathologists, providing tools extending OpenAI and Natural Language Processing for therapists to manage caseloads, create/view students and/or teachers, plan events, and much more."
-
-      [[params.experience.list.items]]
-      details = "Built 5 new cutting-edge UI features surrounding retrieving Firestore data for AI functionality."
-      [[params.experience.list.items]]
-      details = "Enhanced Firebase Cloud Functions to parse user-entered text to return AI-based action."
       [[params.experience.list.items]]
       details = "Incorporated OpenAI and Natural Language Processing functionality into UI features."
+      [[params.experience.list.items]]
+      details = "Extended workflows using React Context API to support advanced AI-driven tooling."
 
     [[params.experience.list]]
     title = "Senior Software Engineer"
