@@ -1,72 +1,9 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router";
 
-import TerminalPanel from "@/components/TerminalPanel";
+import Terminal from "@/components/Terminal";
 
 import { profile } from "@/data/resume";
-
-const terminals = [
-  {
-    name: "elite-basement-solutions",
-    status: "LIVE",
-    statusColor: "text-emerald-400",
-    activeColor: "text-emerald-400",
-    interval: 2000,
-    lines: [
-      "[BUILD] Scaffolding React Router 7 SPA...",
-      "[STYLE] Tailwind CSS dark/light theme ready",
-      "[SEO] Meta tags + structured data injected",
-      "[PERF] Lighthouse score: 98 performance",
-      "[DEPLOY] Production build → Vercel edge",
-      "[LIVE] elitebasementsolutions.com serving"
-    ]
-  },
-  {
-    name: "kitchen-gurus",
-    status: "DEPLOYED",
-    statusColor: "text-cyan-400",
-    activeColor: "text-cyan-400",
-    interval: 1800,
-    lines: [
-      "[INIT] React Router 7 project bootstrapped",
-      "[UI] Material-based component library loaded",
-      "[FORM] Contact + estimate flow integrated",
-      "[SEO] Local search optimization: Philadelphia",
-      "[DATA] 10+ review platform badges rendered",
-      "[LIVE] kitchengurus.net → production"
-    ]
-  },
-  {
-    name: "robka-shop",
-    status: "ACTIVE",
-    statusColor: "text-amber-400",
-    activeColor: "text-amber-400",
-    interval: 2200,
-    lines: [
-      "[APP] Vite + React SPA initialized",
-      "[DATA] Repair ticket CRUD operations live",
-      "[API] Live metal pricing feed connected",
-      "[EXPORT] Spreadsheet generation ready",
-      "[UI] Dark slate theme + custom typography",
-      "[STATUS] robkashop.com dashboard active"
-    ]
-  }
-];
-
-const useClock = () => {
-  const [time, setTime] = useState(() => new Date().toLocaleTimeString("en-GB", { hour12: false }));
-
-  useEffect(() => {
-    const id = setInterval(
-      () => setTime(new Date().toLocaleTimeString("en-GB", { hour12: false })),
-      1000
-    );
-
-    return () => clearInterval(id);
-  }, []);
-
-  return time;
-};
+import useClock from "@/hooks/useClock";
 
 export default function Hero() {
   const clock = useClock();
@@ -143,24 +80,8 @@ export default function Hero() {
             LinkedIn
           </a>
         </div>
-        {/* Terminal panels */}
-        <div className="mb-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-          {terminals.map((t) => (
-            <TerminalPanel key={t.name} terminal={t} />
-          ))}
-        </div>
-        {/* Tech stack bar */}
-        <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-gray-500">
-          <span className="text-base text-indigo-400/70">STACK:</span>
-          {["React", "React Native", "TypeScript", "Next.js", "Node.js", "Tailwind CSS"].map(
-            (tech, index) => (
-              <span key={tech} className="flex items-center gap-2">
-                {index > 0 && <span className="text-indigo-500/40">&bull;</span>}
-                <span className="text-base text-gray-400">{tech}</span>
-              </span>
-            )
-          )}
-        </div>
+        {/* Terminal */}
+        <Terminal />
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { experience, ExperienceItem } from "@/data/resume";
 
-function TimelineEntry({ job }: { job: ExperienceItem }) {
+const TimelineEntry = ({ job }: { job: ExperienceItem }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -11,8 +11,7 @@ function TimelineEntry({ job }: { job: ExperienceItem }) {
       onClick={() => setExpanded(!expanded)}
     >
       {/* Timeline dot */}
-      <div className="absolute top-0 left-0 h-4 w-4 -translate-x-[9px] rounded-full border-4 border-[#0a0a0f] bg-indigo-500" />
-
+      <div className="border-dark-950 absolute top-0 left-0 h-4 w-4 -translate-x-2.25 rounded-full border-4 bg-indigo-500" />
       {/* Header */}
       <h3 className="text-xl font-semibold text-white transition-colors group-hover:text-indigo-400">
         {job.title}
@@ -21,13 +20,10 @@ function TimelineEntry({ job }: { job: ExperienceItem }) {
         <span className="text-sm text-gray-500">@ {job.company}</span>
         <span className="text-sm text-indigo-400">{job.dates}</span>
       </div>
-
       <span className="mb-3 inline-block text-xs text-gray-600">
         {expanded ? "▼ collapse" : "▶ expand"}
       </span>
-
       <p className="mb-3 text-gray-400">{job.description}</p>
-
       {/* Expandable highlights */}
       <div
         className={`overflow-hidden transition-all duration-300 ${
@@ -45,7 +41,7 @@ function TimelineEntry({ job }: { job: ExperienceItem }) {
       </div>
     </div>
   );
-}
+};
 
 export default function WorkPage() {
   return (
