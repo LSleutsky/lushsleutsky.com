@@ -1,3 +1,7 @@
+import GithubIcon from "@/components/svg/GitHubIcon";
+import LinkedinIcon from "@/components/svg/LinkedInIcon";
+import MailIcon from "@/components/svg/MailIcon";
+
 import { profile } from "@/data/resume";
 
 export default function Contact() {
@@ -18,7 +22,7 @@ export default function Contact() {
               className="border-dark-700 bg-dark-800 hover:border-accent-500/50 flex items-center gap-2 rounded-lg border px-5 py-3 text-sm font-medium text-gray-300 transition-all hover:text-white"
               href={`mailto:${profile.email}`}
             >
-              <span className="text-accent-400">@</span>
+              <MailIcon />
               {profile.email}
             </a>
             <a
@@ -27,7 +31,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="text-accent-400">~</span>
+              <GithubIcon />
               GitHub
             </a>
             <a
@@ -36,7 +40,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="text-accent-400">&gt;</span>
+              <LinkedinIcon />
               LinkedIn
             </a>
           </div>

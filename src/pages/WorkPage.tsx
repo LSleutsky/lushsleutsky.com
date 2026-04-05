@@ -57,7 +57,7 @@ export default function WorkPage() {
 
         <div className="mb-12">
           <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            My Experience
+            Work History
           </h1>
           <div className="mb-6 inline-block rounded-full border border-indigo-500/30 px-4 py-1">
             <span className="text-sm tracking-wider text-indigo-400">15+ years of experience</span>
