@@ -1,3 +1,8 @@
+import ChatIcon from "@/components/svg/ChatIcon";
+import RefreshIcon from "@/components/svg/RefreshIcon";
+import ScaffoldIcon from "@/components/svg/ScaffoldIcon";
+import SearchIcon from "@/components/svg/SearchIcon";
+
 const tools = [
   {
     name: "Claude Code",
@@ -26,81 +31,25 @@ const methodology = [
     title: "Architectural Scaffolding",
     description:
       "I describe the system I want — the constraints, the data flow, the boundaries — and use AI to generate the initial structure. Every file, every interface, every route gets reviewed and reshaped before anything else builds on top of it.",
-    icon: (
-      <svg
-        className="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    )
+    icon: <ScaffoldIcon />
   },
   {
     title: "Research & Validation",
     description:
       "When I hit an unfamiliar API, a platform constraint, or a design pattern I haven't used before, I use LLMs to explore options, surface trade-offs, and stress-test my assumptions before writing production code.",
-    icon: (
-      <svg
-        className="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    )
+    icon: <SearchIcon />
   },
   {
     title: "Iterative Refinement",
     description:
       "First pass gets the logic right. Second pass cleans the abstractions. Third pass hardens the edge cases. AI accelerates each cycle, but the judgment calls like what to keep, what to cut, and what to rethink, are all me.",
-    icon: (
-      <svg
-        className="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    )
+    icon: <RefreshIcon />
   },
   {
     title: "Rubber Duck at Scale",
     description:
       "Explaining a problem to an LLM forces clarity the same way explaining it to a colleague does, except I can do it at 2 AM without waking anyone up, and the feedback loop is instant.",
-    icon: (
-      <svg
-        className="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={2}
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    )
+    icon: <ChatIcon />
   }
 ];
 
@@ -153,7 +102,6 @@ export default function HowIWorkPage() {
             working software. Here's how that looks in practice.`}
           </p>
         </div>
-
         {/* Tools I Use */}
         <section className="mb-20">
           <h2 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
@@ -171,7 +119,6 @@ export default function HowIWorkPage() {
             ))}
           </div>
         </section>
-
         {/* Methodology */}
         <section className="mb-20">
           <h2 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
@@ -194,7 +141,6 @@ export default function HowIWorkPage() {
             ))}
           </div>
         </section>
-
         {/* Client Workflow Timeline */}
         <section className="mb-20">
           <div className="mb-16 text-center">
@@ -206,11 +152,9 @@ export default function HowIWorkPage() {
               conversation to production deployments.
             </p>
           </div>
-
           <div className="relative">
-            {/* Timeline line */}
+            {/* Timeline */}
             <div className="from-accent-500/50 via-dark-700 absolute top-0 left-8 hidden h-full w-px bg-linear-to-b to-transparent lg:left-1/2 lg:block" />
-
             <div className="space-y-12">
               {workflow.map((item, i) => (
                 <div
@@ -223,7 +167,6 @@ export default function HowIWorkPage() {
                   <div className="border-dark-700 bg-dark-900 text-accent-400 absolute left-0 flex h-16 w-16 items-center justify-center rounded-full border text-xl font-bold lg:left-1/2 lg:-translate-x-1/2">
                     {item.step}
                   </div>
-
                   {/* Card */}
                   <div
                     className={`border-dark-700 bg-dark-900/50 ml-24 rounded-xl border p-6 lg:ml-0 lg:w-5/12 ${
@@ -238,16 +181,14 @@ export default function HowIWorkPage() {
             </div>
           </div>
         </section>
-
         {/* Closing quote */}
         <section className="border-t border-indigo-500/20 py-12 text-center">
           <blockquote className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-gray-300 italic">
-            {`"I don't use AI to think for me. I use it to keep up with the pace of what
+            {`I don't use AI to think for me. I use it to keep up with the pace of what
             I'm already thinking. Every architectural decision, every trade-off, every line
             that ships... that's my judgment. The tools just make sure the gap between my mental
-            model and working software is as short as possible."`}
+            model and working software is as short as possible.`}
           </blockquote>
-
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               className="rounded-lg bg-indigo-500 px-6 py-3 text-sm font-medium text-white transition-all hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-500/25"
