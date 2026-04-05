@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import ChatIcon from "@/components/svg/ChatIcon";
 import RefreshIcon from "@/components/svg/RefreshIcon";
 import ScaffoldIcon from "@/components/svg/ScaffoldIcon";
@@ -182,37 +183,17 @@ export default function HowIWorkPage() {
           </div>
         </section>
         {/* Closing quote */}
-        <section className="border-t border-indigo-500/20 py-12 text-center">
-          <blockquote className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-gray-300 italic">
+        <section className="border-t border-indigo-500/20 py-12">
+          <blockquote className="mx-auto mb-12 max-w-3xl text-center text-lg leading-relaxed text-gray-300 italic">
             {`I don't use AI to think for me. I use it to keep up with the pace of what
             I'm already thinking. Every architectural decision, every trade-off, every line
             that ships... that's my judgment. The tools just make sure the gap between my mental
             model and working software is as short as possible.`}
           </blockquote>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              className="rounded-lg bg-indigo-500 px-6 py-3 text-sm font-medium text-white transition-all hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-500/25"
-              href="mailto:lush.sleutsky@gmail.com"
-            >
-              Email Me
-            </a>
-            <a
-              className="rounded-lg border border-indigo-500/30 px-6 py-3 text-sm font-medium text-gray-300 transition-all hover:border-indigo-500/60 hover:text-white"
-              href="https://github.com/lsleutsky"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View GitHub Profile
-            </a>
-            <a
-              className="rounded-lg border border-indigo-500/30 px-6 py-3 text-sm font-medium text-gray-300 transition-all hover:border-indigo-500/60 hover:text-white"
-              href="https://linkedin.com/in/lushsleutsky"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View LinkedIn Profile
-            </a>
-          </div>
+          <Contact
+            message="Want to see this workflow in action on your next project? Let's build something great together!"
+            showHeading={false}
+          />
         </section>
       </div>
     </div>
