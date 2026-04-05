@@ -9,14 +9,23 @@ export default function About() {
           <h2 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
             <span className="text-indigo-400">{`//`}</span> Technical Skills
           </h2>
-          <div className="flex flex-wrap gap-2">
-            {technicalSkills.map((skill) => (
-              <span
-                key={skill}
-                className="inline-block rounded-lg border border-indigo-500/30 bg-indigo-500/10 px-3 py-1.5 text-sm text-indigo-300 transition-all duration-300 hover:border-indigo-500/60 hover:text-white"
-              >
-                {skill}
-              </span>
+          <div className="space-y-8">
+            {technicalSkills.map((group) => (
+              <div key={group.category}>
+                <h3 className="mb-3 text-sm font-semibold tracking-wider text-indigo-400 uppercase">
+                  {group.category}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((skill) => (
+                    <span
+                      key={skill}
+                      className="inline-block rounded-lg border border-indigo-500/30 bg-indigo-500/10 px-3 py-1.5 text-sm text-indigo-300 transition-all duration-300 hover:border-indigo-500/60 hover:text-white"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

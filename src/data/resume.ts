@@ -142,28 +142,34 @@ export const experience: ExperienceItem[] = [
 ];
 
 export const technicalSkills = [
-  "JavaScript",
-  "TypeScript",
-  "React.js",
-  "Next.js",
-  "React Native",
-  "Expo",
-  "Node.js",
-  "Express.js",
-  "State Management",
-  "Tailwind CSS",
-  "CSS-in-JS",
-  "SCSS / Sass",
-  "HTML / JSX",
-  "Bootstrap",
-  "Material UI",
-  "AWS",
-  "Firebase",
-  "DevOps",
-  "CI/CD",
-  "Version Control",
-  "Accessibility",
-  "Bundling"
+  {
+    category: "Languages",
+    items: ["TypeScript", "JavaScript", "Python", "Rust", "HTML", "CSS"]
+  },
+  {
+    category: "Frameworks",
+    items: ["React", "React Native", "Next.js", "TanStack Start", "Expo", "Express.js"]
+  },
+  {
+    category: "Styling",
+    items: ["Tailwind CSS", "CSS-in-JS", "SCSS / Sass", "Material UI", "shadcn/ui"]
+  },
+  {
+    category: "State & Data",
+    items: ["Context API", "TanStack Query", "Zustand", "Redux", "Firestore"]
+  },
+  {
+    category: "Infrastructure",
+    items: ["Docker", "CI/CD", "Firebase", "Kubernetes", "Vercel"]
+  },
+  {
+    category: "Tooling",
+    items: ["Git", "Vite", "Webpack", "Rollup", "Storybook"]
+  },
+  {
+    category: "Testing",
+    items: ["Vitest", "Jest", "React Testing Library"]
+  }
 ];
 
 export const professionalSkills = [
