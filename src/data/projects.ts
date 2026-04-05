@@ -33,10 +33,10 @@ export const projects: Project[] = [
     description:
       "Kitchen remodeling company serving the greater Philadelphia area, featuring a multi-step estimate flow and social proof from 10+ review platforms.",
     highlights: [
-      "Material-based UI with green brand identity",
+      "Material-based UI with brand identity",
       "Multi-step consultation and estimate request flow",
       "Local SEO optimized for Philadelphia metro area",
-      "Integrated review badges from Google, Yelp, Angi, BBB"
+      "Geolocation-based service area pages with dynamic content"
     ],
     tech: ["React", "React Router 7", "Material UI", "Vite"],
     liveUrl: "https://kitchengurus.net",
@@ -52,8 +52,7 @@ export const projects: Project[] = [
       "Full CRUD repair ticket management system",
       "Live gold, silver, and platinum pricing dashboard",
       "Spreadsheet export for bookkeeping and reporting",
-      "Custom dark theme with Outfit + Space Grotesk typography",
-      "Custom repair tracking system with status updates and notes"
+      "Custom dark theme with Outfit + Space Grotesk typography"
     ],
     tech: ["React", "Vite", "TypeScript", "REST API"],
     liveUrl: "https://robkashop.com",

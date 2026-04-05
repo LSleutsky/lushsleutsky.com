@@ -16,7 +16,7 @@ const script: TerminalLine[] = [
     delay: 2000
   },
   { type: "input", text: "$ uptime --career", delay: 3000 },
-  { type: "output", text: "15 years, 4 months — no signs of stopping", delay: 3600 },
+  { type: "output", text: "15+ years | no signs of stopping", delay: 3600 },
   { type: "input", text: "$ git log --oneline -5", delay: 4600 },
   { type: "success", text: "a1b2c3d  feat: ship medical device BLE streaming app", delay: 5100 },
   {
@@ -28,7 +28,7 @@ const script: TerminalLine[] = [
   { type: "success", text: "m0n1o2p  feat: launch ai-powered SaaS interfaces", delay: 6000 },
   { type: "success", text: "q3r4s5t  feat: stand up ecommerce pipeline end-to-end", delay: 6300 },
   { type: "input", text: "$ systemctl status engineer", delay: 7300 },
-  { type: "success", text: "● active (running) — open to freelance opportunities", delay: 7900 },
+  { type: "success", text: "● [running] open to freelance opportunities", delay: 7900 },
   { type: "input", text: "$ _", delay: 8800 }
 ];
 
@@ -95,13 +95,13 @@ export default function Terminal() {
         className="h-80 overflow-y-auto p-4 text-xs leading-relaxed sm:h-96 sm:text-sm"
         style={{ scrollbarWidth: "none" }}
       >
-        {script.slice(0, visibleCount).map((line, i) => (
+        {script.slice(0, visibleCount).map((line, index) => (
           <div
-            key={`${i}-${visibleCount > script.length - 1 ? "r" : "f"}`}
+            key={`${index}-${visibleCount > script.length - 1 ? "r" : "f"}`}
             className={`${lineColor[line.type]} transition-opacity duration-300`}
           >
             {line.text}
-            {line.type === "input" && i === visibleCount - 1 && line.text.endsWith("_") && (
+            {line.type === "input" && index === visibleCount - 1 && line.text.endsWith("_") && (
               <span className="ml-0.5 inline-block h-4 w-2 animate-pulse bg-white/70" />
             )}
           </div>

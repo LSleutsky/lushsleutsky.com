@@ -24,13 +24,13 @@ export const experience: ExperienceItem[] = [
     dates: "2025 - Present",
     company: "LifeLens Technologies, Inc.",
     description:
-      "Wearable health-tech startup where I own the entire mobile and desktop toolchain — React Native apps that talk to medical devices over BLE, a Tauri-based provisioning suite in Rust, and the shared component system that ties it all together.",
+      "Wearable health-tech startup where I own the entire mobile and desktop toolchain, consisting of React Native apps that talk to medical devices over BLE, a Tauri-based provisioning suite in Rust, and the shared component system that ties it all together.",
     items: [
       "Took an Android app from empty repo to signed APK, streaming live ECG data from wearable hubs over encrypted BLE with sub-100ms latency and a foreground service that refuses to die.",
       "Wrote native Kotlin bridge modules for BLE and NFC so the React Native layer could read, write, and provision medical hardware without fighting the platform.",
       "Shipped a Tauri desktop app backed by Rust that provisions, configures, and OTA-updates an entire fleet of IoT devices with live progress per unit.",
       "Created the cross-platform Storybook design system — one binary, web and mobile, WCAG-compliant, Atomic Design — now the single source of truth for every UI surface.",
-      "Rebuilt the CI pipeline around Yarn 4 PnP and 250+ tests; builds run 40% faster and regressions get caught before anyone opens a PR."
+      "Rebuilt the CI pipeline around pre-commit hooks, commitlint, and 250+ unit tests. Builds run 40% faster and regressions get caught before anyone opens a PR."
     ],
     color: "indigo"
   },
@@ -39,12 +39,12 @@ export const experience: ExperienceItem[] = [
     dates: "2023 - Present",
     company: "Freelance / Contract",
     description:
-      "Running my own book of clients — local businesses, SaaS products, eCommerce shops — handling everything from first wireframe to production deploy and the infrastructure in between.",
+      "Running my own book of clients for local businesses, SaaS products, and eCommerce shops, handling everything from first wireframe to production deploy and the infrastructure in between.",
     items: [
-      "Ship SPAs, SSR sites, and hybrid apps across React, Next.js, React Router 7, and React Native depending on what the project actually needs — not what's trendy.",
+      "Ship SPAs, SSR sites, and hybrid apps across React, Next.js, and React Native depending on what the project actually needs and not what's trendy.",
       "Wired up full eCommerce pipelines end-to-end: payment processing, transactional email, inventory hooks, and the Express backends that glue them together.",
       "Built AI-powered interfaces on top of LLM APIs that replaced hours of manual workflow for clients who didn't even know that was possible when they hired me.",
-      "Containerized every client project with repeatable Docker builds and automated deploys — hand them the keys and they can scale without calling me."
+      "Containerized every client project with repeatable Docker builds and automated deploys, handing over the keys so they can scale without calling me."
     ],
     color: "emerald"
   },
@@ -53,7 +53,7 @@ export const experience: ExperienceItem[] = [
     dates: "2023",
     company: "Hovr, Inc.",
     description:
-      "Content overlay platform that injects interactive video layers onto third-party websites using Shadow DOM — no host-site code changes required. Think browser extension meets CMS.",
+      "Content overlay platform that injects interactive video layers onto third-party websites using Shadow DOM, with no host-site code changes required. Think browser extension meets CMS.",
     items: [
       "Owned the Shadow DOM rendering pipeline that lets brands drop rich media onto any page without breaking the host site's styles or scripts.",
       'Built the analytics layer — real-time engagement charts, conversion funnels, ROI dashboards — that turned "cool demo" into measurable business value for sales.',
@@ -68,7 +68,7 @@ export const experience: ExperienceItem[] = [
     description:
       "National-scale food delivery across Waitr, Bite Squad, and Delivery Dudes — three brands, 1,000+ markets, millions of orders. I led the frontend effort to unify them into one platform.",
     items: [
-      "Ran a performance blitz that put our web vitals ahead of DoorDash and GrubHub — measurable improvement in conversion and order volume across the network.",
+      "Ran a performance blitz that put our web vitals ahead of DoorDash and GrubHub, leading to a measurable improvement in conversion and order volume across the network.",
       "Architected and led the three-brand consolidation into a single Next.js + TypeScript codebase using npm workspaces, retiring years of duplicated frontend code.",
       "Stood up a venue-based mobile ordering flow on React 18 concurrent mode and EKS, opening a revenue channel the platform didn't have before.",
       "Added Stripe-powered subscription management that created a recurring revenue line item from scratch."
@@ -80,11 +80,11 @@ export const experience: ExperienceItem[] = [
     dates: "2018 - 2021",
     company: "Comcast Business",
     description:
-      "Enterprise portal for Comcast's business customers — account management, service configuration, billing. Fast sprint cycles, high stakes, millions of end users.",
+      "Enterprise portal for Comcast's business customers, covering account management, service configuration, and billing. Fast sprint cycles, high stakes, millions of end users.",
     items: [
-      "Ran the shared Storybook component library that every team consumed — when I changed a component, it shipped to dozens of apps simultaneously.",
+      "Ran the shared Storybook component library that every team consumed such that when I changed a component, it shipped to dozens of apps simultaneously. So, kind of a big deal.",
       "Replaced Enzyme with React Testing Library across the org's test suites before most teams even knew RTL existed, bringing test reliability up to match the product's scale.",
-      "Set the frontend coding standards that stuck — style guides, review checklists, architectural patterns — adopted across multiple squads.",
+      "Set the frontend coding standards that stuck, like style guides, review checklists, and architectural patterns that were adopted across multiple squads.",
       "Earned a senior promotion in under a year, which doesn't happen often in an org that size."
     ],
     color: "purple"
@@ -96,9 +96,9 @@ export const experience: ExperienceItem[] = [
     description:
       "SaaS analytics platform for fuel delivery operators — think customizable dashboard with live fleet data, IoT sensor feeds, and delivery KPIs that actually mean something to the people using them.",
     items: [
-      "Built a drag-and-resize widget dashboard with infinite scroll and lazy-loaded data — operators assembled their own command center from a menu of KPI modules.",
+      "Built a drag-and-resize widget dashboard with infinite scroll and lazy-loaded data allowing operators to assemble their own command center from a menu of KPI modules.",
       "Translated raw hex telemetry from field sensors into human-readable dashboards that caught equipment failures before they turned into emergency service calls.",
-      "Led the greenfield rewrite from AngularJS to Angular 6 with D3.js visualizations, setting the technical foundation for the product's next five years."
+      "Led the Greenfield rewrite from AngularJS to Angular 4 with D3.js visualizations, setting the technical foundation for the product's next several years."
     ],
     color: "red"
   },
@@ -107,10 +107,10 @@ export const experience: ExperienceItem[] = [
     dates: "2014 - 2015",
     company: "Kids Live Safe",
     description:
-      "Child safety platform with a massive records database and real-time alert system — my job was making the frontend fast, compliant, and conversion-friendly.",
+      "Child safety platform with a massive records database and real-time alert system. My job was making the frontend fast, compliant, and conversion-friendly.",
     items: [
       "Tightened the frontend for W3C compliance and cross-browser parity across a subscription product serving millions of lookups.",
-      "Built the email template engine — adaptive HTML that looked right in 30+ mail clients and drove the re-engagement and alert notification flows."
+      "Built the email template engine focusing on adaptive HTML that looked good in 30+ mail clients and drove the re-engagement and alert notification flows."
     ],
     color: "emerald"
   },
@@ -134,8 +134,8 @@ export const experience: ExperienceItem[] = [
     description:
       "Agency life — client briefs on Monday, pixel-perfect deliveries by Friday. This is where I learned to ship fast, communicate clearly, and care about the details that clients notice.",
     items: [
-      "Handled the full frontend cycle from PSD-to-code through cross-browser QA and UAT, on timelines that didn't leave room for second guesses.",
-      "Picked up Backbone.js and AngularJS before most developers had heard of them — the architectural instincts I built here never left."
+      "Handled the full frontend cycle from wireframe-to-code through cross-browser QA and UAT, on timelines that didn't leave room for second guesses.",
+      "Picked up Backbone.js and AngularJS before most developers had heard of them, and the architectural instincts I built here never left."
     ],
     color: "amber"
   }
@@ -174,7 +174,8 @@ export const technicalSkills = [
 
 export const professionalSkills = [
   "Effective Communication",
-  "Problem Solving",
+  "Aggressive Organization",
+  "Systematic Problem Solving",
   "Cross-Team Collaboration",
   "Process Improvement",
   "Stakeholder Engagement",

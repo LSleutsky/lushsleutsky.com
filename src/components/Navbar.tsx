@@ -10,7 +10,8 @@ interface NavLinkProps {
 
 const navLinks = [
   { label: "Home", to: "/" },
-  { label: "Experience", to: "/work" }
+  { label: "Experience", to: "/work" },
+  { label: "How I Work", to: "/how-i-work" }
 ];
 
 const NavLink = ({ to, label, active, onClick }: NavLinkProps) => {
