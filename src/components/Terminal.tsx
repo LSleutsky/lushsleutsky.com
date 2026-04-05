@@ -76,7 +76,7 @@ export default function Terminal() {
   }, [visibleCount]);
 
   return (
-    <div className="mx-auto max-w-2xl overflow-hidden rounded-lg border border-indigo-500/30 bg-black/40">
+    <div className="mx-auto max-w-4xl overflow-hidden rounded-lg border border-indigo-500/30 bg-black/40">
       {/* Title bar */}
       <div className="flex items-center justify-between border-b border-indigo-500/20 bg-indigo-500/5 px-4 py-2.5">
         <div className="flex items-center gap-3">
@@ -92,7 +92,7 @@ export default function Terminal() {
       {/* Terminal body */}
       <div
         ref={bodyRef}
-        className="h-72 overflow-y-auto p-4 text-xs leading-relaxed sm:h-80 sm:text-sm"
+        className="h-80 overflow-y-auto p-4 text-xs leading-relaxed sm:h-96 sm:text-sm"
         style={{ scrollbarWidth: "none" }}
       >
         {script.slice(0, visibleCount).map((line, i) => (

@@ -26,18 +26,20 @@ const TimelineEntry = ({ job }: { job: ExperienceItem }) => {
       <p className="mb-3 text-gray-400">{job.description}</p>
       {/* Expandable highlights */}
       <div
-        className={`overflow-hidden transition-all duration-300 ${
-          expanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        className={`grid transition-[grid-template-rows] duration-300 ${
+          expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
-        <ul className="space-y-2 pt-2">
-          {job.items.map((item, j) => (
-            <li key={j} className="flex items-start gap-2 text-sm text-gray-500">
-              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div className="overflow-hidden">
+          <ul className="space-y-2 pt-2">
+            {job.items.map((item, j) => (
+              <li key={j} className="flex items-start gap-2 text-sm text-gray-500">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
