@@ -152,7 +152,7 @@ export const technicalSkills = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "CSS-in-JS", "SCSS / Sass", "Material UI", "shadcn/ui"]
+    items: ["Tailwind CSS", "CSS-in-JS", "SCSS / Sass", "Bootstrap", "Material UI", "shadcn/ui"]
   },
   {
     category: "State & Data",

@@ -61,6 +61,12 @@ export default function Hero() {
           >
             Experience
           </Link>
+          <Link
+            className="rounded-lg border border-indigo-500/30 px-6 py-3 text-sm font-medium text-gray-300 transition-all hover:border-indigo-500/60 hover:text-white"
+            to="/how-i-work"
+          >
+            How I Work
+          </Link>
           <a
             className="rounded-lg border border-emerald-500/30 px-6 py-3 text-sm font-medium text-emerald-300 transition-all hover:border-emerald-500/60 hover:text-white"
             href="#contact"
@@ -71,24 +77,7 @@ export default function Hero() {
           >
             Get In Touch
           </a>
-          <a
-            className="rounded-lg border border-cyan-500/30 px-6 py-3 text-sm font-medium text-cyan-300 transition-all hover:border-cyan-500/60 hover:text-white"
-            href="https://github.com/lsleutsky"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            GitHub
-          </a>
-          <a
-            className="rounded-lg border border-purple-500/30 px-6 py-3 text-sm font-medium text-purple-300 transition-all hover:border-purple-500/60 hover:text-white"
-            href="https://linkedin.com/in/lushsleutsky"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
         </div>
-        {/* Terminal */}
         <Terminal />
       </div>
     </section>
