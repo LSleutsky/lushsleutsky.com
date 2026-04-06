@@ -56,13 +56,13 @@ export default function Hero() {
             View Projects
           </a>
           <Link
-            className="rounded-lg border border-indigo-500/30 px-6 py-3 text-sm font-medium text-gray-300 transition-all hover:border-indigo-500/60 hover:text-white"
+            className="rounded-lg border border-cyan-500/30 px-6 py-3 text-sm font-medium text-cyan-300 transition-all hover:border-cyan-500/60 hover:text-white"
             to="/work"
           >
             Experience
           </Link>
           <Link
-            className="rounded-lg border border-indigo-500/30 px-6 py-3 text-sm font-medium text-gray-300 transition-all hover:border-indigo-500/60 hover:text-white"
+            className="rounded-lg border border-purple-500/30 px-6 py-3 text-sm font-medium text-purple-300 transition-all hover:border-purple-500/60 hover:text-white"
             to="/how-i-work"
           >
             How I Work
