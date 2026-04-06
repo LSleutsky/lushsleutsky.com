@@ -144,7 +144,7 @@ export const experience: ExperienceItem[] = [
 export const technicalSkills = [
   {
     category: "Languages",
-    items: ["TypeScript", "JavaScript", "Python", "Rust", "HTML", "CSS"]
+    items: ["JavaScript", "TypeScript", "Python", "Rust", "HTML", "CSS"]
   },
   {
     category: "Frameworks",
@@ -156,7 +156,15 @@ export const technicalSkills = [
   },
   {
     category: "State & Data",
-    items: ["Context API", "TanStack Query", "Zustand", "Redux", "Firestore"]
+    items: [
+      "Context API",
+      "TanStack Query",
+      "Zustand",
+      "Redux",
+      "Firestore",
+      "PostgreSQL",
+      "MongoDB"
+    ]
   },
   {
     category: "Infrastructure",
@@ -175,7 +183,7 @@ export const technicalSkills = [
 export const professionalSkills = [
   "Effective Communication",
   "Aggressive Organization",
-  "Systematic Problem Solving",
+  "Obsessive Problem Solving",
   "Cross-Team Collaboration",
   "Process Improvement",
   "Stakeholder Engagement",
@@ -190,9 +198,9 @@ export const languages = [
 ];
 
 export const interests = [
-  "Technology",
-  "Artificial Intelligence",
   "Contact Sports",
   "Cosmology",
-  "Norse Mythology"
+  "Norse Mythology",
+  "History",
+  "Psychology"
 ];

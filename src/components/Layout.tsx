@@ -1,9 +1,16 @@
-import { Outlet } from "react-router";
+import { useLayoutEffect } from "react";
+import { Outlet, useLocation } from "react-router";
 
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Layout() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="relative min-h-screen font-mono">
       <div className="pointer-events-none fixed inset-0 opacity-10">

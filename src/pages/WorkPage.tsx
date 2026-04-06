@@ -85,11 +85,11 @@ export default function WorkPage() {
           </h2>
           <ul className="space-y-3">
             {[
-              "Self-taught foundation with 15+ years of building things for the web, starting long before it was a career",
-              "I write code that other people can actually read, maintain, and build on. Clean file structure, consistent naming, small focused modules, no clever tricks that only make sense to the person who wrote them",
-              "Proficient with AI-assisted development tools like Claude Code, GitHub Copilot, Codex, and Ollama, integrated into daily workflows to move faster without giving up control",
-              "I treat code review the same way I treat my own code. If something is hard to follow or unnecessarily complex, I say so and offer a cleaner path forward",
-              "Strong preference for composable, testable architecture over monolithic patterns. If I can't explain a component's job in one sentence, it's doing too much"
+              "Self-taught foundation with 15+ years of building things with code, starting long before it was a career.",
+              "I write code that other people can actually read, maintain, and build on. Clean file structure, consistent naming, small focused modules, no clever tricks that only make sense to the person who wrote them.",
+              "Proficient with AI-assisted development tools like Claude Code, GitHub Copilot, Codex, and Ollama, integrated into daily workflows to move faster without giving up control.",
+              "I treat code review the same way I treat my own code. If something is hard to follow or unnecessarily complex, I say so and offer a cleaner path forward.",
+              "Strong preference for composable, testable, modular architecture over monolithic patterns. If I can't explain a component's job in one sentence, it's doing too much."
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-sm text-gray-400">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />

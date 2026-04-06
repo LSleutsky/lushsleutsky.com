@@ -49,7 +49,7 @@ export default function About() {
         <div className="grid gap-6 sm:grid-cols-2">
           <div className="rounded-lg border border-indigo-500/30 bg-black/20 p-6">
             <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-white">
-              <span className="text-indigo-400">{`//`}</span> Languages
+              <span className="text-indigo-400">{`//`}</span> Human Languages
             </h3>
             <div className="space-y-2">
               {languages.map((language) => (
@@ -62,7 +62,7 @@ export default function About() {
           </div>
           <div className="rounded-lg border border-indigo-500/30 bg-black/20 p-6">
             <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-white">
-              <span className="text-indigo-400">{`//`}</span> Interests
+              <span className="text-indigo-400">{`//`}</span> Non-Programming Interests
             </h3>
             <div className="flex flex-wrap gap-2">
               {interests.map((interest) => (

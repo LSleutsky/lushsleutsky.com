@@ -48,6 +48,10 @@ export default function Hero() {
           <a
             className="rounded-lg bg-indigo-500 px-6 py-3 text-sm font-medium text-white transition-all hover:bg-indigo-600 hover:shadow-lg hover:shadow-indigo-500/25"
             href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             View Projects
           </a>
@@ -60,6 +64,10 @@ export default function Hero() {
           <a
             className="rounded-lg border border-emerald-500/30 px-6 py-3 text-sm font-medium text-emerald-300 transition-all hover:border-emerald-500/60 hover:text-white"
             href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Get In Touch
           </a>

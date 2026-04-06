@@ -4,8 +4,8 @@ import { projects } from "@/data/projects";
 
 export default function Showcase() {
   return (
-    <section className="px-6 py-24" id="projects">
-      <div className="mx-auto max-w-6xl">
+    <section className="py-24" id="projects">
+      <div className="mx-auto max-w-6xl px-6">
         {/* Header */}
         <div className="mb-12">
           <h2 className="mb-2 flex items-center gap-3 text-3xl font-bold text-white sm:text-4xl">

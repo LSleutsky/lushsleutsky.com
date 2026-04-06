@@ -98,8 +98,8 @@ export default function HowIWorkPage() {
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
             My Neural Network
           </h1>
-          <p className="max-w-3xl text-lg text-gray-400">
-            {`Let's be real — AI is everywhere, and yes, I make use of it. I think any valuable and intellectually honest engineer these days that claims otherwise is either lying, or in denial. But... AI doesn't write my code; it accelerates the process of turning my decisions into
+          <p className="text-lg text-gray-400">
+            {`Let's be realistic here: AI is everywhere. And yes — spoiler alert — I use it, and I like it. I think any intellectually honest engineer these days that claims otherwise is either lying, or in denial. But... AI doesn't write my code; it accelerates the process of turning my decisions into
             working software. Here's how that looks in practice.`}
           </p>
         </div>
@@ -184,7 +184,7 @@ export default function HowIWorkPage() {
         </section>
         {/* Closing quote */}
         <section className="border-t border-indigo-500/20 py-12">
-          <blockquote className="mx-auto mb-12 max-w-3xl text-center text-lg leading-relaxed text-gray-300 italic">
+          <blockquote className="mx-auto mb-12 text-center text-lg leading-relaxed text-gray-300 italic">
             {`I don't use AI to think for me. I use it to keep up with the pace of what
             I'm already thinking. Every architectural decision, every trade-off, every line
             that ships... that's my judgment. The tools just make sure the gap between my mental
