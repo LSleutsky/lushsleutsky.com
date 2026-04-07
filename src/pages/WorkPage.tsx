@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact";
 import TimelineEntry from "@/components/TimelineEntry";
+import TracingBeam from "@/components/TracingBeam";
 
 import { experience } from "@/data/resume";
 
@@ -28,11 +29,11 @@ export default function WorkPage() {
           <h2 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
             <span className="text-indigo-400">{`//`}</span> Work History
           </h2>
-          <div>
-            {experience.map((job, i) => (
-              <TimelineEntry key={i} job={job} />
+          <TracingBeam>
+            {experience.map((job, index) => (
+              <TimelineEntry key={index} job={job} />
             ))}
-          </div>
+          </TracingBeam>
         </div>
         {/* Additional */}
         <div className="mb-16">

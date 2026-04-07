@@ -7,7 +7,7 @@ export default function TimelineEntry({ job }: { job: ExperienceItem }) {
 
   return (
     <div
-      className="group relative cursor-pointer border-l-2 border-indigo-500/30 pb-8 pl-8 last:border-l-transparent last:pb-0"
+      className="group relative cursor-pointer pb-8 pl-8 last:pb-0"
       onClick={() => setExpanded(!expanded)}
     >
       {/* Timeline dot */}
