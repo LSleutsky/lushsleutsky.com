@@ -183,7 +183,8 @@ export const technicalSkills = [
 export const professionalSkills = [
   "Effective Communication",
   "Aggressive Organization",
-  "Obsessive Problem Solving",
+  "Systematic Problem Solving",
+  "Obsessive Documentation",
   "Cross-Team Collaboration",
   "Process Improvement",
   "Stakeholder Engagement",

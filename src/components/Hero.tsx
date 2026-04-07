@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 
+import ParticleCanvas from "@/components/ParticleCanvas";
 import Terminal from "@/components/Terminal";
 
 import { profile } from "@/data/resume";
@@ -10,7 +11,8 @@ export default function Hero() {
 
   return (
     <section className="bg-dark-950 relative min-h-screen overflow-hidden font-mono">
-      <div className="mx-auto max-w-6xl px-6 pt-28 pb-20 sm:pt-36">
+      <ParticleCanvas />
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20 sm:pt-36">
         {/* Status bar */}
         <div className="relative mb-8 grid grid-cols-1 gap-2 border-b border-indigo-500/20 pb-4 text-sm sm:grid-cols-3">
           <div className="flex items-center gap-2">
