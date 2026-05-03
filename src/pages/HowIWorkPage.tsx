@@ -184,7 +184,7 @@ export default function HowIWorkPage() {
         </section>
         {/* Closing quote */}
         <section className="border-t border-indigo-500/20 py-12">
-          <blockquote className="mx-auto mb-12 text-center text-lg leading-relaxed text-gray-300 italic">
+          <blockquote className="mx-auto mb-12 text-lg leading-relaxed text-gray-400">
             {`I don't use AI to think for me. I use it to keep up with the pace of what
             I'm already thinking. Every architectural decision, every trade-off, every line
             that ships... that's my judgment. The tools just make sure the gap between my mental

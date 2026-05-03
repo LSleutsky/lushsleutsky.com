@@ -26,7 +26,7 @@ export const experience: ExperienceItem[] = [
     description:
       "Wearable health-tech startup where I own the entire mobile and desktop toolchain, consisting of React Native apps that talk to medical devices over BLE, a Tauri-based provisioning suite in Rust, and the shared component system that ties it all together.",
     items: [
-      "Took an Android app from empty repo to signed APK, streaming live ECG data from wearable hubs over encrypted BLE with sub-100ms latency and a foreground service that refuses to die.",
+      "Took an Android app from empty repo to signed APK, streaming live ECG data from wearable peripherals over encrypted BLE with sub-100ms latency and a foreground service that refuses to die.",
       "Wrote native Kotlin bridge modules for BLE and NFC so the React Native layer could read, write, and provision medical hardware without fighting the platform.",
       "Shipped a Tauri desktop app backed by Rust that provisions, configures, and OTA-updates an entire fleet of IoT devices with live progress per unit.",
       "Created the cross-platform Storybook design system — one binary, web and mobile, WCAG-compliant, Atomic Design — now the single source of truth for every UI surface.",
