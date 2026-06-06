@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
+import GithubIcon from "@/components/svg/GitHubIcon";
+
 import { Project } from "@/data/projects";
 
 const colorMap: Record<
@@ -95,7 +97,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
           ))}
         </div>
         {/* Links */}
-        <div className="border-dark-700 mt-auto flex gap-3 border-t pt-4">
+        <div className="border-dark-700 mt-auto flex items-center justify-between gap-3 border-t pt-4">
           <a
             className="flex items-center gap-1.5 text-sm text-gray-400 transition-colors hover:text-white"
             href={project.liveUrl}
@@ -116,6 +118,15 @@ export default function ProjectCard({ project, index }: { project: Project; inde
               />
             </svg>
             Live Site
+          </a>
+          <a
+            className="flex items-center gap-1.5 text-sm text-gray-400 transition-colors hover:text-white"
+            href={project.githubUrl}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <GithubIcon className="h-4 w-4" />
+            GitHub
           </a>
         </div>
       </div>

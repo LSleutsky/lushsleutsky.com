@@ -6,6 +6,7 @@ export interface Project {
   highlights: string[];
   tech: string[];
   liveUrl: string;
+  githubUrl: string;
   color: string;
 }
 
@@ -24,6 +25,7 @@ export const projects: Project[] = [
     ],
     tech: ["React", "React Router 7", "Tailwind CSS", "Vite"],
     liveUrl: "https://elitebasementsolutions.com",
+    githubUrl: "https://github.com/LSleutsky/elite-basement-solutions",
     color: "indigo"
   },
   {
@@ -40,6 +42,7 @@ export const projects: Project[] = [
     ],
     tech: ["React", "React Router 7", "Material UI", "Vite"],
     liveUrl: "https://kitchengurus.net",
+    githubUrl: "https://github.com/LSleutsky/kitchen-gurus",
     color: "emerald"
   },
   {
@@ -56,6 +59,7 @@ export const projects: Project[] = [
     ],
     tech: ["React", "Vite", "TypeScript", "REST API"],
     liveUrl: "https://robkashop.com",
+    githubUrl: "https://github.com/LSleutsky/robka-shop",
     color: "amber"
   }
 ];
