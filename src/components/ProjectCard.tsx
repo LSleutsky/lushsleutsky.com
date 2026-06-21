@@ -36,6 +36,9 @@ export default function ProjectCard({ project, index }: { project: Project; inde
   const ref = useRef<HTMLElement>(null);
   const colors = colorMap[project.color] || colorMap.indigo;
 
+  const liveLinks =
+    project.liveLinks ?? (project.liveUrl ? [{ label: "Live Site", url: project.liveUrl }] : []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -98,27 +101,32 @@ export default function ProjectCard({ project, index }: { project: Project; inde
         </div>
         {/* Links */}
         <div className="border-dark-700 mt-auto flex items-center justify-between gap-3 border-t pt-4">
-          <a
-            className="flex items-center gap-1.5 text-sm text-gray-400 transition-colors hover:text-white"
-            href={project.liveUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={1.5}
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            Live Site
-          </a>
+          <div className="flex items-center gap-4">
+            {liveLinks.map(({ label, url }) => (
+              <a
+                key={url}
+                className="flex items-center gap-1.5 text-sm text-gray-400 transition-colors hover:text-white"
+                href={url}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                {label}
+              </a>
+            ))}
+          </div>
           <a
             className="flex items-center gap-1.5 text-sm text-gray-400 transition-colors hover:text-white"
             href={project.githubUrl}

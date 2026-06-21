@@ -93,13 +93,12 @@ export default function HowIWorkPage() {
             </span>
           </div>
         </div>
-
         <div className="mb-16">
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
             My Neural Network
           </h1>
           <p className="text-lg text-gray-400">
-            {`Let's be realistic here: AI is everywhere. And yes — spoiler alert — I use it, and I like it. I think any intellectually honest engineer these days that claims otherwise is either lying, or in denial. But... AI doesn't write my code; it accelerates the process of turning my decisions into
+            {`Let's be realistic here: AI is everywhere. And yes — spoiler alert — I use it, and I like it. I think any intellectually honest engineer these days that claims otherwise is either lying, or in denial. But... AI doesn't write my code. It accelerates the process of turning my decisions into
             working software. Here's how that looks in practice.`}
           </p>
         </div>

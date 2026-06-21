@@ -5,27 +5,31 @@ export interface Project {
   description: string;
   highlights: string[];
   tech: string[];
-  liveUrl: string;
+  liveUrl?: string;
+  liveLinks?: { label: string; url: string }[];
   githubUrl: string;
   color: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Elite Basement Solutions",
+    title: "Elite Interior Solutions",
     category: "Frontend",
     status: "Production",
     description:
-      "A full-service home improvement company specializing in basement waterproofing, mold remediation, and renovations across Pennsylvania, New Jersey, and Delaware.",
+      "A pnpm monorepo powering two home improvement brands, Elite Basement Solutions and Elite Kitchens & Bathrooms, built on a shared UI component library and server-rendered",
     highlights: [
-      "React Router 7 SPA with dark/light theme toggle",
-      "SEO-optimized with structured data and meta tags",
-      "Responsive service pages with lead generation forms",
-      "Deployed to edge with sub-second load times"
+      "pnpm monorepo: two brand sites sharing one UI component library",
+      "Server-side rendered via React Router 7 on an Express backend",
+      "Lead-capture contact forms with transactional email delivery",
+      "Containerized with Docker for reproducible deploys"
     ],
-    tech: ["React", "React Router 7", "Tailwind CSS", "Vite"],
-    liveUrl: "https://elitebasementsolutions.com",
-    githubUrl: "https://github.com/LSleutsky/elite-basement-solutions",
+    tech: ["React", "React Router 7", "Tailwind CSS", "Express"],
+    liveLinks: [
+      { label: "Basements", url: "https://elitebasementsolutions.com" },
+      { label: "Kitchens", url: "https://elitekitchensbathrooms.com" }
+    ],
+    githubUrl: "https://github.com/LSleutsky/elite-interior-solutions",
     color: "indigo"
   },
   {
