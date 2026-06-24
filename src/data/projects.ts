@@ -13,7 +13,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Elite Interior Solutions",
+    title: "Elite Interior Renewals",
     category: "Frontend",
     status: "Production",
     description:
@@ -27,9 +27,9 @@ export const projects: Project[] = [
     tech: ["React", "React Router 7", "Tailwind CSS", "Express"],
     liveLinks: [
       { label: "Basements", url: "https://elitebasementsolutions.com" },
-      { label: "Kitchens", url: "https://elitekitchensbathrooms.com" }
+      { label: "Renewals", url: "https://eliteinteriorrenewals.com" }
     ],
-    githubUrl: "https://github.com/LSleutsky/elite-interior-solutions",
+    githubUrl: "https://github.com/LSleutsky/elite-interior-renewals",
     color: "indigo"
   },
   {
