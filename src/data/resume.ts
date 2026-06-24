@@ -103,18 +103,6 @@ export const experience: ExperienceItem[] = [
     color: "red"
   },
   {
-    title: "Solutions Developer",
-    dates: "2014 - 2015",
-    company: "Kids Live Safe",
-    description:
-      "Child safety platform with a massive records database and real-time alert system. My job was making the frontend fast, compliant, and conversion-friendly.",
-    items: [
-      "Tightened the frontend for W3C compliance and cross-browser parity across a subscription product serving millions of lookups.",
-      "Built the email template engine focusing on adaptive HTML that looked good in 30+ mail clients and drove the re-engagement and alert notification flows."
-    ],
-    color: "emerald"
-  },
-  {
     title: "Web Engineer",
     dates: "2012 - 2017",
     company: "Three Brothers, Inc.",
@@ -144,11 +132,19 @@ export const experience: ExperienceItem[] = [
 export const technicalSkills = [
   {
     category: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "Rust", "HTML", "CSS"]
+    items: ["TypeScript", "JavaScript", "Node.js", "Python", "Rust", "HTML", "CSS"]
   },
   {
     category: "Frameworks",
-    items: ["React", "React Native", "Next.js", "TanStack Start", "Expo", "Express.js"]
+    items: [
+      "React",
+      "Next.js",
+      "TanStack Start",
+      "React Router",
+      "React Native",
+      "Expo",
+      "Express.js"
+    ]
   },
   {
     category: "Styling",
