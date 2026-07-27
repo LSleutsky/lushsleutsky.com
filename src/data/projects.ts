@@ -27,7 +27,7 @@ export const projects: Project[] = [
     tech: ["React", "React Router 7", "Tailwind CSS", "Express"],
     liveLinks: [
       { label: "Basements", url: "https://elitebasementsolutions.com" },
-      { label: "Renewals", url: "https://eliteinteriorrenewals.com" }
+      { label: "Remodeling", url: "https://eliteinteriorrenewals.com" }
     ],
     githubUrl: "https://github.com/LSleutsky/elite-interior-renewals",
     color: "indigo"

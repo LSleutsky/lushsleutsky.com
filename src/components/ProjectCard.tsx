@@ -101,7 +101,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
         </div>
         {/* Links */}
         <div className="border-dark-700 mt-auto flex items-center justify-between gap-3 border-t pt-4">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col gap-2">
             {liveLinks.map(({ label, url }) => (
               <a
                 key={url}
