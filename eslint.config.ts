@@ -60,6 +60,6 @@ export default tseslint.config(
   },
   prettierConfig,
   {
-    ignores: ["node_modules/", "dist/", "public/"]
+    ignores: ["node_modules/", "dist/", "public/", ".react-router/"]
   }
 );

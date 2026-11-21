@@ -12,6 +12,7 @@ dist
 *.tsbuildinfo
 .env
 dist-ssr
+.react-router
 *.local
 
 # Editor directories and files

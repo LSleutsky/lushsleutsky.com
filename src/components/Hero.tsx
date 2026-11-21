@@ -21,7 +21,9 @@ export default function Hero() {
           </div>
           <div className="flex items-center gap-2 sm:justify-center">
             <span className="text-gray-600">LOCAL:</span>
-            <span className="font-bold tracking-wider text-emerald-400">{clock}</span>
+            <span suppressHydrationWarning className="font-bold tracking-wider text-emerald-400">
+              {clock}
+            </span>
           </div>
           <div className="flex items-center gap-2 whitespace-nowrap text-gray-600 sm:justify-end">
             <span>

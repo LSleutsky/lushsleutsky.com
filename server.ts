@@ -102,11 +102,14 @@ app.get("/api/contributions", async (_, res) => {
   }
 });
 
-app.use("/assets", express.static("dist/assets", { immutable: true, maxAge: "1y" }));
-app.use(express.static("dist", { maxAge: "1h" }));
+app.use("/assets", express.static("dist/client/assets", { immutable: true, maxAge: "1y" }));
+app.get(["/work", "/how-i-work"], (req, res) => {
+  res.sendFile(path.join(req.path, "index.html"), { root: "dist/client" });
+});
+app.use(express.static("dist/client", { maxAge: "1h" }));
 // SPA fallback
 app.use((_, res) => {
-  res.sendFile(path.join(process.cwd(), "dist/index.html"));
+  res.sendFile("__spa-fallback.html", { root: "dist/client" });
 });
 
 app.listen(PORT, () => {
