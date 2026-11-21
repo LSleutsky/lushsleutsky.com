@@ -59,7 +59,7 @@ export default function TracingBeam({ children }: TracingBeamProps) {
       const rect = container.getBoundingClientRect();
       const readLine = window.innerHeight * 0.5;
 
-      setBeamY(readLine - rect.top);
+      setBeamY(Math.min(readLine - rect.top, window.scrollY * 2));
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });

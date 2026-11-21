@@ -1,83 +1,75 @@
 import Contact from "@/components/Contact";
-import ChatIcon from "@/components/svg/ChatIcon";
-import RefreshIcon from "@/components/svg/RefreshIcon";
-import ScaffoldIcon from "@/components/svg/ScaffoldIcon";
-import SearchIcon from "@/components/svg/SearchIcon";
+import TracingBeam from "@/components/TracingBeam";
 
-const tools = [
+const principles = [
   {
-    name: "Claude Code",
+    title: "The smallest diff wins",
     description:
-      "Primary development partner for architecture decisions, complex implementations, and iterative problem-solving across entire codebases."
+      "An agent left alone will refactor your file, add three helpers, and wrap everything in error handling nobody asked for. Mine is told that the failure to avoid is not a missing feature. It's a diff bigger than the task.",
+    rule: "The deliverable is the smallest change that does exactly what was asked and is verified."
   },
   {
-    name: "GitHub Copilot",
+    title: "Plan before code",
     description:
-      "Inline completions and quick pattern matching during active coding sessions, which is very useful for boilerplate and repetitive patterns."
+      "Anything that spans several files starts as a written plan: every file it will touch, every new file with the reason it has to exist, and an explicit list of what is out of scope. I approve it, change it, or throw it out before a line is written.",
+    rule: "Each phase leaves the build green with one behavior complete and stays under about 150 changed lines."
   },
   {
-    name: "Codex",
+    title: "Nothing is assumed",
     description:
-      "Targeted code generation and transformation tasks, especially when working across multiple files or translating between frameworks."
+      "Models are confident about APIs that don't exist. So the agent has to find the method in the repo or in the package's own type definitions before it calls it, and it stops and asks when a schema or contract is missing.",
+    rule: "Required context missing: stop and ask. Never invent it."
   },
   {
-    name: "Ollama",
+    title: "Checks are enforced, not requested",
     description:
-      "Local model inference for offline development, sensitive codebases, and rapid prototyping without external API dependencies."
+      "Hooks run the formatter, the linter, and the typechecker on whatever a turn changed, and the turn can't end until they pass. Asking an agent to be careful is a suggestion. A hook that blocks it is a guarantee.",
+    rule: 'Report evidence: what ran and the result. Never "should work".'
+  },
+  {
+    title: "Specialists over one generalist",
+    description:
+      "Narrow subagents do narrow jobs. One reads other repos and returns contracts. One fetches facts from documentation and has to cite the source. One runs the tests. One reviews the finished diff cold, with no idea what I was hoping to see.",
+    rule: "Do not delegate what a few tool calls finish."
+  },
+  {
+    title: "I make every commit",
+    description:
+      "The agent never stages, commits, or pushes. It hands me a diff, the results of the checks, and a one-line commit message. I read all of it, and my name goes on the commit because the decision was mine.",
+    rule: "Before the commit message, read the diff and delete every line the task did not need."
   }
 ];
 
-const methodology = [
-  {
-    title: "Architectural Scaffolding",
-    description:
-      "I describe the system I want — the constraints, the data flow, the boundaries — and use AI to generate the initial structure. Every file, every interface, every route gets reviewed and reshaped before anything else builds on top of it.",
-    icon: <ScaffoldIcon />
-  },
-  {
-    title: "Research & Validation",
-    description:
-      "When I hit an unfamiliar API, a platform constraint, or a design pattern I haven't used before, I use LLMs to explore options, surface trade-offs, and stress-test my assumptions before writing production code.",
-    icon: <SearchIcon />
-  },
-  {
-    title: "Iterative Refinement",
-    description:
-      "First pass gets the logic right. Second pass cleans the abstractions. Third pass hardens the edge cases. AI accelerates each cycle, but the judgment calls like what to keep, what to cut, and what to rethink, are all me.",
-    icon: <RefreshIcon />
-  },
-  {
-    title: "Rubber Duck at Scale",
-    description:
-      "Explaining a problem to an LLM forces clarity the same way explaining it to a colleague does, except I can do it at 2 AM without waking anyone up, and the feedback loop is instant.",
-    icon: <ChatIcon />
-  }
-];
-
-const workflow = [
+const steps = [
   {
     step: "01",
-    title: "Discovery & Scoping",
+    title: "Scope",
     description:
-      "Understand the problem before touching code. I map out requirements, identify constraints, and define what 'done' looks like, then use AI to rapidly research unfamiliar domains, surface edge cases I might miss, and validate that the scope makes sense before committing to an approach."
+      "I write down what done looks like and what is out of scope before any code exists. Open questions get asked once, in one batch, here and not in review."
   },
   {
     step: "02",
-    title: "Architecture & Design",
+    title: "Plan",
     description:
-      "Define the system boundaries, data flow, and component contracts. AI helps me evaluate patterns I'm considering, prototype interfaces quickly, and pressure-test decisions against real-world scenarios. bThe architecture, though, is mine, and I can defend every choice in it."
+      "The agent proposes the work as vertical slices, naming the files and lines it expects to change. This is where most of my time goes, because a wrong plan is cheap to fix and wrong code is not."
   },
   {
     step: "03",
-    title: "Accelerated Development",
+    title: "Build",
     description:
-      "This is where AI earns its keep. Scaffolding, boilerplate, test harnesses, migration scripts, and anything that follows a known pattern, gets generated and reviewed rather than typed line by line. The time I save goes straight into the work that actually requires judgment and brain power."
+      "One slice at a time, written the way the repo already does that kind of thing. When the answer isn't in the code, a research subagent brings back the documented fact with its source."
   },
   {
     step: "04",
-    title: "Ship & Iterate",
+    title: "Verify",
     description:
-      "Containerized builds, automated pipelines, production deploys. AI helps me write deployment configs, catch issues in CI output, and draft documentation, but I'm the one watching the logs, triaging the alerts, and deciding what ships next."
+      "Format, lint, and typecheck run automatically. The existing tests run for the code that was touched. Failures come back with their output, and nothing gets labeled as someone else's problem."
+  },
+  {
+    step: "05",
+    title: "Review and commit",
+    description:
+      "I read the full diff, cut anything the task did not need, and commit it myself. Then the next slice starts from a green build."
   }
 ];
 
@@ -95,100 +87,65 @@ export default function HowIWorkPage() {
         </div>
         <div className="mb-16">
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            My Neural Network
+            How I Work With AI
           </h1>
           <p className="text-lg text-gray-400">
-            {`Let's be realistic here: AI is everywhere. And yes — spoiler alert — I use it, and I like it. I think any intellectually honest engineer these days that claims otherwise is either lying, or in denial. But... AI doesn't write my code. It accelerates the process of turning my decisions into
-            working software. Here's how that looks in practice.`}
+            {`I run coding agents the way I'd run a team: written rules, automated checks, and nothing merged that I haven't read. The agents do the typing. The decisions, the diff, and the commit are mine.`}
           </p>
         </div>
-        {/* Tools I Use */}
+        {/* Principles */}
         <section className="mb-20">
-          <h2 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
-            <span className="text-indigo-400">{`//`}</span> Tools in My Workflow
+          <h2 className="mb-3 flex items-center gap-3 text-2xl font-bold text-white">
+            <span className="text-indigo-400">{`//`}</span> The System
           </h2>
+          <p className="mb-8 max-w-3xl text-gray-400">
+            Every agent I work with reads the same working agreement before it touches a file. The
+            green lines are quoted straight from it.
+          </p>
           <div className="grid gap-4 sm:grid-cols-2">
-            {tools.map((tool) => (
+            {principles.map((principle) => (
               <div
-                key={tool.name}
-                className="border-dark-700 bg-dark-900/50 hover:border-dark-600 rounded-xl border p-5 transition-colors"
+                key={principle.title}
+                className="border-dark-700 bg-dark-900/50 hover:border-dark-600 flex flex-col rounded-xl border p-5 transition-colors"
               >
-                <h4 className="mb-2 text-sm font-semibold text-white">{tool.name}</h4>
-                <p className="text-sm leading-relaxed text-gray-400">{tool.description}</p>
+                <h3 className="mb-2 font-semibold text-white">{principle.title}</h3>
+                <p className="mb-4 text-sm leading-relaxed text-gray-400">
+                  {principle.description}
+                </p>
+                <p className="mt-auto border-l-2 border-emerald-500/50 pl-3 text-xs leading-relaxed text-emerald-400">
+                  {principle.rule}
+                </p>
               </div>
             ))}
           </div>
         </section>
-        {/* Methodology */}
+        {/* Task timeline */}
         <section className="mb-20">
           <h2 className="mb-8 flex items-center gap-3 text-2xl font-bold text-white">
-            <span className="text-indigo-400">{`//`}</span> How I Use Them
+            <span className="text-indigo-400">{`//`}</span> One Task, Start to Finish
           </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {methodology.map((card) => (
-              <div
-                key={card.title}
-                className="border-dark-700 bg-dark-900/50 hover:border-dark-600 rounded-xl border p-5 transition-colors"
-              >
-                <div className="mb-3 flex items-center gap-3">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-indigo-500/30 bg-indigo-500/10 text-indigo-400">
-                    {card.icon}
-                  </div>
-                  <h4 className="text-sm font-semibold text-white">{card.title}</h4>
-                </div>
-                <p className="text-sm leading-relaxed text-gray-400">{card.description}</p>
+          <TracingBeam>
+            {steps.map((item) => (
+              <div key={item.step} className="relative pb-8 pl-8 last:pb-0">
+                <div className="border-dark-950 absolute top-0 left-0 h-4 w-4 -translate-x-2.25 rounded-full border-4 bg-indigo-500" />
+                <h3 className="mb-2 text-xl font-semibold text-white">
+                  <span className="mr-3 text-sm text-indigo-400">{item.step}</span>
+                  {item.title}
+                </h3>
+                <p className="max-w-3xl text-gray-400">{item.description}</p>
               </div>
             ))}
-          </div>
+          </TracingBeam>
         </section>
-        {/* Client Workflow Timeline */}
-        <section className="mb-20">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
-              From Concept to Production
-            </h2>
-            <p className="mx-auto max-w-2xl text-gray-400">
-              How AI tools integrate into my development process at every stage. From the first
-              conversation to production deployments.
-            </p>
-          </div>
-          <div className="relative">
-            {/* Timeline */}
-            <div className="from-accent-500/50 via-dark-700 absolute top-0 left-8 hidden h-full w-px bg-linear-to-b to-transparent lg:left-1/2 lg:block" />
-            <div className="space-y-12">
-              {workflow.map((item, i) => (
-                <div
-                  key={item.step}
-                  className={`relative flex flex-col items-start lg:items-center ${
-                    i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                  }`}
-                >
-                  {/* Step circle */}
-                  <div className="border-dark-700 bg-dark-900 text-accent-400 absolute left-0 flex h-16 w-16 items-center justify-center rounded-full border text-xl font-bold lg:left-1/2 lg:-translate-x-1/2">
-                    {item.step}
-                  </div>
-                  {/* Card */}
-                  <div
-                    className={`border-dark-700 bg-dark-900/50 ml-24 rounded-xl border p-6 lg:ml-0 lg:w-5/12 ${
-                      i % 2 === 0 ? "lg:mr-auto lg:pr-12" : "lg:ml-auto lg:pl-12"
-                    }`}
-                  >
-                    <h3 className="mb-2 text-lg font-semibold text-white">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-gray-400">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-        {/* Closing quote */}
+        {/* Closing */}
         <section className="border-t border-indigo-500/20 py-12">
-          <blockquote className="mx-auto mb-12 text-lg leading-relaxed text-gray-400">
-            {`I don't use AI to think for me. I use it to keep up with the pace of what
-            I'm already thinking. Every architectural decision, every trade-off, every line
-            that ships... that's my judgment. The tools just make sure the gap between my mental
-            model and working software is as short as possible.`}
-          </blockquote>
+          <p className="mb-4 text-lg leading-relaxed text-gray-400">
+            The tools change every few months. The system doesn&apos;t: clear scope, small diffs,
+            enforced checks, and a human who reads everything.
+          </p>
+          <p className="mb-12 text-sm text-gray-500">
+            Currently in the rotation: Claude Code, Codex, GitHub Copilot, and Ollama.
+          </p>
           <Contact
             message="Want to see this workflow in action on your next project? Let's build something great together!"
             showHeading={false}
