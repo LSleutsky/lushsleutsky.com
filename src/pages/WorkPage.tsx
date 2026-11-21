@@ -55,11 +55,12 @@ export default function WorkPage() {
           </h2>
           <ul className="space-y-3">
             {[
-              "Self-taught foundation with 15+ years of building things with code, starting long before it was a career.",
-              "I write code that other people can actually read, maintain, and build on. Clean file structure, consistent naming, small focused modules, no clever tricks that only make sense to the person who wrote them.",
+              "I set technical direction by writing it down first: the plan, what it touches, and what is out of scope, agreed before any code exists.",
+              "I would rather make the right way the easy way than police it. Shared design systems, written standards, and automated checks are how my decisions have reached other teams.",
+              "I use code review to raise the bar for the team, not just the diff. When something is hard to follow I say so, explain why, and offer a cleaner path forward.",
+              "I favor composable, testable modules over monoliths, and I judge an architecture by how safely the next engineer can change it.",
               "I run coding agents like Claude Code and Codex under a written working agreement with enforced checks, and I read and commit every diff myself.",
-              "I treat code review the same way I treat my own code. If something is hard to follow or unnecessarily complex, I say so and offer a cleaner path forward.",
-              "Strong preference for composable, testable, modular architecture over monolithic patterns. If I can't explain a component's job in one sentence, it's doing too much."
+              "Self-taught from the start, which is why I go wherever the problem is: firmware packet protocols, native Kotlin services, and Rust tooling when the product needed them."
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-3 text-sm text-gray-400">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />

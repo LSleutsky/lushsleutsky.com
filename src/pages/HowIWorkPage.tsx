@@ -73,6 +73,29 @@ const steps = [
   }
 ];
 
+const teamHabits = [
+  {
+    title: "Decisions get written down",
+    description:
+      "Before a change of any size, I write a short proposal: the problem, the options I weighed, and what I am choosing not to do. It can be challenged before code exists, and found again a year later."
+  },
+  {
+    title: "Standards live in tooling",
+    description:
+      "If a rule matters, it goes into the linter, the type system, or a shared component. A convention that depends on everyone remembering a wiki page is not a standard yet."
+  },
+  {
+    title: "Review is for the next engineer",
+    description:
+      "I review for whether someone new could change this code safely. When something is hard to follow I say so, explain why, and offer a cleaner path."
+  },
+  {
+    title: "Small slices, always shippable",
+    description:
+      "Work lands as vertical slices that each leave the main branch green with one behavior complete. Big-bang merges hide risk until the worst possible moment."
+  }
+];
+
 const title = "How I Work With AI | Lush Sleutsky";
 const description =
   "How I run coding agents: written rules, automated checks, and nothing merged that I haven't read.";
@@ -111,7 +134,7 @@ export default function HowIWorkPage() {
           <h2 className="mb-3 flex items-center gap-3 text-2xl font-bold text-white">
             <span className="text-indigo-400">{`//`}</span> The System
           </h2>
-          <p className="mb-8 max-w-3xl text-gray-400">
+          <p className="mb-8 text-gray-400">
             Every agent I work with reads the same working agreement before it touches a file. The
             green lines are quoted straight from it.
           </p>
@@ -150,10 +173,31 @@ export default function HowIWorkPage() {
             ))}
           </TracingBeam>
         </section>
+        {/* Team habits */}
+        <section className="mb-20">
+          <h2 className="mb-3 flex items-center gap-3 text-2xl font-bold text-white">
+            <span className="text-indigo-400">{`//`}</span> The Same Rules, With People
+          </h2>
+          <p className="mb-8 text-gray-400">
+            None of this started with agents. The working agreement is how I already worked with
+            engineers, written down strictly enough for a machine to follow.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {teamHabits.map((habit) => (
+              <div
+                key={habit.title}
+                className="border-dark-700 bg-dark-900/50 hover:border-dark-600 rounded-xl border p-5 transition-colors"
+              >
+                <h3 className="mb-2 font-semibold text-white">{habit.title}</h3>
+                <p className="text-sm leading-relaxed text-gray-400">{habit.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
         {/* Closing */}
         <section className="border-t border-indigo-500/20 py-12">
           <p className="mb-4 text-lg leading-relaxed text-gray-400">
-            The tools change every few months. The system doesn&apos;t: clear scope, small diffs,
+            The tools change every few months, the system doesn&apos;t: clear scope, small diffs,
             enforced checks, and a human who reads everything.
           </p>
           <p className="mb-12 text-sm text-gray-400">
