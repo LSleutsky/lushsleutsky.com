@@ -47,7 +47,7 @@ export const experience: ExperienceItem[] = [
       "Lifted user retention 35% by rewriting session flows and building the Express backends behind eCommerce, auth, and real-time features.",
       "Rebuilt image pipelines with responsive source sets, WebP, and lazy loading, taking LCP from over 5s to under 2s and Lighthouse performance to 95+.",
       "Pushed organic search rankings up with structured data and on-page SEO, contributing to 12% client revenue growth.",
-      "Built AI-powered interfaces on top of LLM APIs that replaced hours of manual workflow for clients who didn't even know that was possible when they hired me.",
+      "Built AI-powered interfaces on top of LLM APIs that replaced hours of manual workflow for clients.",
       "Containerized every client project with repeatable Docker builds and automated deploys, handing over the keys so they can scale without calling me."
     ],
     color: "emerald"
@@ -75,7 +75,7 @@ export const experience: ExperienceItem[] = [
       "National-scale food delivery across Waitr, Bite Squad, and Delivery Dudes — three brands, 1,000+ markets, millions of orders. I led the frontend effort to unify them into one platform.",
     items: [
       "Architected and led the three-brand consolidation into a single Next.js + TypeScript monorepo serving 175K+ users, retiring years of duplicated frontend code.",
-      "Refactored the core React/Redux app and cleared 45+ performance bottlenecks, putting our web vitals ahead of DoorDash and GrubHub and contributing to 19% revenue growth in one year.",
+      "Refactored the core React/Redux app and cleared 45+ performance bottlenecks, contributing to 19% revenue growth in one year.",
       "Cut the JS bundle 30% with Webpack tree shaking, dead CSS pruning, and CDN-delivered image pipelines.",
       "Stood up a venue-based mobile ordering flow on event-driven React 18 and EKS, opening a revenue channel the platform didn't have before.",
       "Added Stripe-powered subscription management that created a recurring revenue line item from scratch."
@@ -92,9 +92,9 @@ export const experience: ExperienceItem[] = [
       "Built the React/Redux self-serve diagnostics and configuration portals used by millions of B2B customers, cutting support ticket volume.",
       "Shipped 40+ Storybook components into a shared design system across multiple React microfrontends, adopted by 200+ developers. When I changed a component, it shipped to dozens of apps at once.",
       "Launched QuickPay and live chat, raising user retention 20%.",
-      "Replaced Enzyme with React Testing Library across the org's test suites before most teams even knew RTL existed, bringing test reliability up to match the product's scale.",
+      "Replaced Enzyme with React Testing Library across the org's test suites, bringing test reliability up to match the product's scale.",
       "Set the frontend coding standards that stuck, like style guides, review checklists, and architectural patterns that were adopted across multiple squads.",
-      "Earned a senior promotion in under a year, which doesn't happen often in an org that size."
+      "Earned a senior promotion in under a year."
     ],
     color: "purple"
   },
@@ -133,7 +133,7 @@ export const experience: ExperienceItem[] = [
       "Agency life — client briefs on Monday, pixel-perfect deliveries by Friday. This is where I learned to ship fast, communicate clearly, and care about the details that clients notice.",
     items: [
       "Handled the full frontend cycle from wireframe-to-code through cross-browser QA and UAT, on timelines that didn't leave room for second guesses.",
-      "Picked up Backbone.js and AngularJS before most developers had heard of them, and the architectural instincts I built here never left."
+      "Picked up Backbone.js and AngularJS early, and the architectural instincts I built here never left."
     ],
     color: "amber"
   }
