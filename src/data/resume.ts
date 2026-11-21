@@ -24,13 +24,15 @@ export const experience: ExperienceItem[] = [
     dates: "2025 - Present",
     company: "LifeLens Technologies, Inc.",
     description:
-      "Wearable health-tech startup where I own the entire mobile and desktop toolchain, consisting of React Native apps that talk to medical devices over BLE, a Tauri-based provisioning suite in Rust, and the shared component system that ties it all together.",
+      "Wearable health-tech startup where I ship the software headed for FDA submission: React Native apps that talk to medical devices over BLE, a clinician web portal for sleep and cardiac data, and a Tauri provisioning suite in Rust deployed with U.S. military units.",
     items: [
-      "Took an Android app from empty repo to signed APK, streaming live ECG data from wearable peripherals over encrypted BLE with sub-100ms latency and a foreground service that refuses to die.",
-      "Wrote native Kotlin bridge modules for BLE and NFC so the React Native layer could read, write, and provision medical hardware without fighting the platform.",
-      "Shipped a Tauri desktop app backed by Rust that provisions, configures, and OTA-updates an entire fleet of IoT devices with live progress per unit.",
-      "Created the cross-platform Storybook design system — one binary, web and mobile, WCAG-compliant, Atomic Design — now the single source of truth for every UI surface.",
-      "Rebuilt the CI pipeline around pre-commit hooks, commitlint, and 250+ unit tests. Builds run 40% faster and regressions get caught before anyone opens a PR."
+      "Took a greenfield React Native clinician app from empty repo to 4 FDA pilot sites in 10 weeks, covering TAVR, sleep, cardiac rehab, and cath lab workflows through Python edge APIs running on Raspberry Pi gateways at each site.",
+      "Wrote a native Kotlin foreground service that refuses to die, keeping Android from killing continuous BLE sessions through 16 days of at-home TAVR patient self-monitoring.",
+      "Tracked down a silently failing SpO2 disable flag at patient discharge by reverse-engineering the peripheral firmware's 8-packet sensor config protocol, byte by byte.",
+      "Built the sleep study analytics platform for FDA submission: 8 stacked real-time physiological lanes in SciChart, custom hover sampling across 1Hz and 30-second epoch signals, and automated SVG-based PDF reports.",
+      "Cut the clinician web portal's initial bundle 80% (422KB to 84KB) with manual vendor chunking, lazy SciChart loading, parallel WASM preload, edge Brotli, and server-side rendering above the fold.",
+      "Overhauled the Tauri desktop tool that manages U.S. military hardware fleets, adding a Rust feature flag system so each deployment gets its own custom build.",
+      "Created the WCAG-compliant Storybook design system that ships LifeLens web and React Native UI from one package."
     ],
     color: "indigo"
   },
@@ -41,8 +43,10 @@ export const experience: ExperienceItem[] = [
     description:
       "Running my own book of clients for local businesses, SaaS products, and eCommerce shops, handling everything from first wireframe to production deploy and the infrastructure in between.",
     items: [
-      "Ship SPAs, SSR sites, and hybrid apps across React, Next.js, and React Native depending on what the project actually needs and not what's trendy.",
-      "Wired up full eCommerce pipelines end-to-end: payment processing, transactional email, inventory hooks, and the Express backends that glue them together.",
+      "Cut 7+ seconds off the heaviest screens by moving client-rendered React, Next.js, and TanStack apps to SSR/SSG.",
+      "Lifted user retention 35% by rewriting session flows and building the Express backends behind eCommerce, auth, and real-time features.",
+      "Rebuilt image pipelines with responsive source sets, WebP, and lazy loading, taking LCP from over 5s to under 2s and Lighthouse performance to 95+.",
+      "Pushed organic search rankings up with structured data and on-page SEO, contributing to 12% client revenue growth.",
       "Built AI-powered interfaces on top of LLM APIs that replaced hours of manual workflow for clients who didn't even know that was possible when they hired me.",
       "Containerized every client project with repeatable Docker builds and automated deploys, handing over the keys so they can scale without calling me."
     ],
@@ -55,9 +59,11 @@ export const experience: ExperienceItem[] = [
     description:
       "Content overlay platform that injects interactive video layers onto third-party websites using Shadow DOM, with no host-site code changes required. Think browser extension meets CMS.",
     items: [
-      "Owned the Shadow DOM rendering pipeline that lets brands drop rich media onto any page without breaking the host site's styles or scripts.",
+      "Engineered the drag-and-drop composition editor in React, Redux Toolkit, and Firebase, with Shadow DOM isolation so complex layouts never leak styles into the host site.",
       'Built the analytics layer — real-time engagement charts, conversion funnels, ROI dashboards — that turned "cool demo" into measurable business value for sales.',
-      "Shipped the feature-gating system that unlocked tiered pricing, directly enabling enterprise deals that were previously blocked on access control."
+      "Shipped tiered feature gating across 4 paid levels, unlocking usage-based billing and the enterprise deals that were previously blocked on access control.",
+      "Audited and fixed 50+ Figma flows for performance and accessibility, clearing the way for enterprise contracts.",
+      "Trimmed CI build time 15% with Webpack 5 optimizations and GitHub Actions caching."
     ],
     color: "cyan"
   },
@@ -68,9 +74,10 @@ export const experience: ExperienceItem[] = [
     description:
       "National-scale food delivery across Waitr, Bite Squad, and Delivery Dudes — three brands, 1,000+ markets, millions of orders. I led the frontend effort to unify them into one platform.",
     items: [
-      "Ran a performance blitz that put our web vitals ahead of DoorDash and GrubHub, leading to a measurable improvement in conversion and order volume across the network.",
-      "Architected and led the three-brand consolidation into a single Next.js + TypeScript codebase using npm workspaces, retiring years of duplicated frontend code.",
-      "Stood up a venue-based mobile ordering flow on React 18 concurrent mode and EKS, opening a revenue channel the platform didn't have before.",
+      "Architected and led the three-brand consolidation into a single Next.js + TypeScript monorepo serving 175K+ users, retiring years of duplicated frontend code.",
+      "Refactored the core React/Redux app and cleared 45+ performance bottlenecks, putting our web vitals ahead of DoorDash and GrubHub and contributing to 19% revenue growth in one year.",
+      "Cut the JS bundle 30% with Webpack tree shaking, dead CSS pruning, and CDN-delivered image pipelines.",
+      "Stood up a venue-based mobile ordering flow on event-driven React 18 and EKS, opening a revenue channel the platform didn't have before.",
       "Added Stripe-powered subscription management that created a recurring revenue line item from scratch."
     ],
     color: "amber"
@@ -82,7 +89,9 @@ export const experience: ExperienceItem[] = [
     description:
       "Enterprise portal for Comcast's business customers, covering account management, service configuration, and billing. Fast sprint cycles, high stakes, millions of end users.",
     items: [
-      "Ran the shared Storybook component library that every team consumed such that when I changed a component, it shipped to dozens of apps simultaneously. So, kind of a big deal.",
+      "Built the React/Redux self-serve diagnostics and configuration portals used by millions of B2B customers, cutting support ticket volume.",
+      "Shipped 40+ Storybook components into a shared design system across multiple React microfrontends, adopted by 200+ developers. When I changed a component, it shipped to dozens of apps at once.",
+      "Launched QuickPay and live chat, raising user retention 20%.",
       "Replaced Enzyme with React Testing Library across the org's test suites before most teams even knew RTL existed, bringing test reliability up to match the product's scale.",
       "Set the frontend coding standards that stuck, like style guides, review checklists, and architectural patterns that were adopted across multiple squads.",
       "Earned a senior promotion in under a year, which doesn't happen often in an org that size."
@@ -97,8 +106,9 @@ export const experience: ExperienceItem[] = [
       "SaaS analytics platform for fuel delivery operators — think customizable dashboard with live fleet data, IoT sensor feeds, and delivery KPIs that actually mean something to the people using them.",
     items: [
       "Built a drag-and-resize widget dashboard with infinite scroll and lazy-loaded data allowing operators to assemble their own command center from a menu of KPI modules.",
-      "Translated raw hex telemetry from field sensors into human-readable dashboards that caught equipment failures before they turned into emergency service calls.",
-      "Led the Greenfield rewrite from AngularJS to Angular 4 with D3.js visualizations, setting the technical foundation for the product's next several years."
+      "Translated raw hex telemetry from field sensors into D3.js visualizations that caught equipment failures before they turned into emergency service calls, automating reporting steps that used to be manual.",
+      "Architected the greenfield real-time IoT sensor monitoring platform in Angular 6, TypeScript, and KendoUI, setting the technical foundation for the product's next several years.",
+      "Tuned Mongoose query logic for hierarchical data, speeding up MongoDB execution and eliminating 17% of stale data."
     ],
     color: "red"
   },
@@ -109,9 +119,9 @@ export const experience: ExperienceItem[] = [
     description:
       "Took a word-of-mouth construction company digital from scratch — built every website, ran every ad campaign, and watched the pipeline grow year over year because of it.",
     items: [
-      "Created and maintained web properties for the parent company and its subsidiaries, handling design, development, and hosting across the board.",
+      "Launched 22+ production landing pages for the parent company and its subsidiaries as the sole front-end engineer, owning the stack from design through deployment.",
       "Ran the Google AdWords and SEO playbook that turned a zero-web-presence business into one with a steady stream of inbound leads.",
-      "Grew the stack from static pages to jQuery to AngularJS over five years as the business outgrew what came before."
+      "Migrated a 4-year-old jQuery codebase to ES6 and AngularJS, setting the foundation for the next two years of feature work."
     ],
     color: "cyan"
   },
