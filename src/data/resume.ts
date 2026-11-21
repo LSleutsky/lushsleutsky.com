@@ -74,8 +74,8 @@ export const experience: ExperienceItem[] = [
     description:
       "National-scale food delivery across Waitr, Bite Squad, and Delivery Dudes — three brands, 1,000+ markets, millions of orders. I led the frontend effort to unify them into one platform.",
     items: [
-      "Architected and led the three-brand consolidation into a single Next.js + TypeScript monorepo serving 175K+ users, retiring years of duplicated frontend code.",
-      "Refactored the core React/Redux app and cleared 45+ performance bottlenecks, contributing to 19% revenue growth in one year.",
+      "Made the call to fold three separately maintained brand frontends into one Next.js + TypeScript monorepo and led the consolidation, retiring years of duplicated code so a change ships once for all 175K+ users.",
+      "Treated page speed as a revenue problem: refactored the core React/Redux app and cleared 45+ performance bottlenecks, contributing to 19% revenue growth in one year.",
       "Cut the JS bundle 30% with Webpack tree shaking, dead CSS pruning, and CDN-delivered image pipelines.",
       "Stood up a venue-based mobile ordering flow on event-driven React 18 and EKS, opening a revenue channel the platform didn't have before.",
       "Added Stripe-powered subscription management that created a recurring revenue line item from scratch."
@@ -90,10 +90,10 @@ export const experience: ExperienceItem[] = [
       "Enterprise portal for Comcast's business customers, covering account management, service configuration, and billing. Fast sprint cycles, high stakes, millions of end users.",
     items: [
       "Built the React/Redux self-serve diagnostics and configuration portals used by millions of B2B customers, cutting support ticket volume.",
-      "Shipped 40+ Storybook components into a shared design system across multiple React microfrontends, adopted by 200+ developers. When I changed a component, it shipped to dozens of apps at once.",
+      "Pushed for one shared design system instead of per-team UI across the React microfrontends, then shipped 40+ Storybook components into it. 200+ developers adopted it, so one component change reached dozens of apps at once.",
       "Launched QuickPay and live chat, raising user retention 20%.",
-      "Replaced Enzyme with React Testing Library across the org's test suites, bringing test reliability up to match the product's scale.",
-      "Set the frontend coding standards that stuck, like style guides, review checklists, and architectural patterns that were adopted across multiple squads.",
+      "Drove the org's move from Enzyme to React Testing Library so tests assert what users see instead of component internals, bringing test reliability up to match the product's scale.",
+      "Wrote the frontend standards multiple squads adopted (style guides, review checklists, architectural patterns), giving code review one shared bar across teams.",
       "Earned a senior promotion in under a year."
     ],
     color: "purple"
