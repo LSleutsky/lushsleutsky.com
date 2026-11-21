@@ -16,7 +16,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link href={canonicalUrl} rel="canonical" />
         <meta content={canonicalUrl} property="og:url" />
         <meta content="website" property="og:type" />
-        <meta content="summary" name="twitter:card" />
+        <meta content="https://www.lushsleutsky.com/og.png" property="og:image" />
+        <meta content="1200" property="og:image:width" />
+        <meta content="630" property="og:image:height" />
+        <meta content="summary_large_image" name="twitter:card" />
         <Meta />
         <Links />
       </head>
