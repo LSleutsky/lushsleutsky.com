@@ -71,7 +71,7 @@ export default function Hero() {
             className="rounded-lg border border-purple-500/30 px-6 py-3 text-sm font-medium text-purple-300 transition-all hover:border-purple-500/60 hover:text-white"
             to="/how-i-work"
           >
-            How I Work
+            How I Work With AI
           </Link>
           <a
             className="rounded-lg border border-emerald-500/30 px-6 py-3 text-sm font-medium text-emerald-300 transition-all hover:border-emerald-500/60 hover:text-white"
