@@ -73,6 +73,19 @@ const steps = [
   }
 ];
 
+const title = "How I Work With AI | Lush Sleutsky";
+const description =
+  "How I run coding agents: written rules, automated checks, and nothing merged that I haven't read.";
+
+export function meta() {
+  return [
+    { title },
+    { name: "description", content: description },
+    { property: "og:title", content: title },
+    { property: "og:description", content: description }
+  ];
+}
+
 export default function HowIWorkPage() {
   return (
     <div className="pt-24 pb-20">
