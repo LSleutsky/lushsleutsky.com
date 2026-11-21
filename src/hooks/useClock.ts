@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
 
 const useClock = () => {
-  const [time, setTime] = useState(() => new Date().toLocaleTimeString("en-GB", { hour12: false }));
+  const [time, setTime] = useState(() =>
+    new Date().toLocaleTimeString("en-US", { hourCycle: "h23", timeZone: "America/New_York" })
+  );
 
   useEffect(() => {
     const id = setInterval(
-      () => setTime(new Date().toLocaleTimeString("en-GB", { hour12: false })),
+      () =>
+        setTime(
+          new Date().toLocaleTimeString("en-US", { hourCycle: "h23", timeZone: "America/New_York" })
+        ),
       1000
     );
 
