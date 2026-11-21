@@ -23,7 +23,7 @@ export default function WorkPage() {
       <div className="mx-auto max-w-6xl px-6">
         {/* Page header */}
         <div className="mb-8 flex items-center justify-between border-b border-indigo-500/20 pb-4 text-sm">
-          <div className="flex items-center gap-2 whitespace-nowrap text-gray-600">
+          <div className="flex items-center gap-2 whitespace-nowrap text-gray-400">
             <span>
               MODE: <span className="text-emerald-400">EXPERIENCE</span>
             </span>

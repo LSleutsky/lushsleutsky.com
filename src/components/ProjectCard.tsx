@@ -82,7 +82,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
         {/* Highlights */}
         <ul className="mb-5 space-y-2">
           {project.highlights.map((highlight, index) => (
-            <li key={index} className="flex items-start gap-2 text-sm text-gray-500">
+            <li key={index} className="flex items-start gap-2 text-sm text-gray-400">
               <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${colors.dot}`} />
               {highlight}
             </li>

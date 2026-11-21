@@ -18,7 +18,7 @@ const NavLink = ({ to, label, active, onClick }: NavLinkProps) => {
   return (
     <Link
       className={`block rounded-lg px-4 py-3 text-sm transition-colors hover:text-white sm:inline sm:rounded-none sm:px-0 sm:py-0 sm:hover:bg-transparent ${
-        active ? "text-white" : "text-gray-500"
+        active ? "text-white" : "text-gray-400"
       } ${!active ? "hover:bg-dark-800 sm:hover:bg-transparent" : ""}`}
       to={to}
       onClick={onClick}
@@ -49,6 +49,7 @@ export default function Navbar() {
         </div>
         {/* Hamburger toggle */}
         <button
+          aria-expanded={open}
           aria-label="Toggle menu"
           className="flex flex-col gap-1.5 sm:hidden"
           onClick={() => setOpen((o) => !o)}
@@ -69,6 +70,7 @@ export default function Navbar() {
         className={`bg-dark-950/95 overflow-hidden border-t border-indigo-500/20 backdrop-blur-md transition-all duration-300 sm:hidden ${
           open ? "max-h-72" : "max-h-0 border-t-0"
         }`}
+        inert={!open}
       >
         <div className="flex flex-col gap-1 px-6 py-4">
           {navLinks.map((link) => (

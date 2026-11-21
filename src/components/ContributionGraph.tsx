@@ -62,7 +62,7 @@ export default function ContributionGraph() {
             {`GitHub Activity ${new Date().getFullYear()}`}
           </h2>
           {data && (
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-400">
               {data.totalContributions.toLocaleString()} contributions this year
             </span>
           )}
@@ -70,7 +70,7 @@ export default function ContributionGraph() {
         <div className="overflow-x-auto rounded-lg border border-indigo-500/20 bg-black/20 p-4">
           {loading ? (
             <div className="flex h-28 items-center justify-center">
-              <span className="animate-pulse text-sm text-gray-600">Loading contributions...</span>
+              <span className="animate-pulse text-sm text-gray-400">Loading contributions...</span>
             </div>
           ) : data ? (
             <div className="flex gap-0.75">

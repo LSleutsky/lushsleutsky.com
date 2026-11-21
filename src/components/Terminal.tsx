@@ -40,15 +40,31 @@ const lineColor: Record<TerminalLine["type"], string> = {
   error: "text-red-400"
 };
 
-export default function Terminal() {
+export default function Terminal({
+  isPaused,
+  onTogglePause
+}: {
+  isPaused: boolean;
+  onTogglePause: () => void;
+}) {
   const [visibleCount, setVisibleCount] = useState(0);
   const bodyRef = useRef<HTMLDivElement>(null);
   const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
 
   useEffect(() => {
+    if (isPaused) {
+      return;
+    }
+
     const schedule = () => {
       timersRef.current.forEach(clearTimeout);
       timersRef.current = [];
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        setVisibleCount(script.length);
+
+        return;
+      }
 
       setVisibleCount(0);
 
@@ -67,7 +83,7 @@ export default function Terminal() {
       clearTimeout(kickoff);
       timersRef.current.forEach(clearTimeout);
     };
-  }, []);
+  }, [isPaused]);
 
   useEffect(() => {
     if (bodyRef.current) {
@@ -85,9 +101,18 @@ export default function Terminal() {
             <div className="h-3 w-3 rounded-full bg-yellow-500/60" />
             <div className="h-3 w-3 rounded-full bg-emerald-500/60" />
           </div>
-          <span className="text-xs text-gray-500">lush@dev ~ </span>
+          <span className="text-xs text-gray-400">lush@dev ~ </span>
         </div>
-        <span className="text-[10px] text-emerald-400">● zsh</span>
+        <div className="flex items-center gap-3">
+          <button
+            className="cursor-pointer px-2 py-1 text-xs text-gray-400 transition-colors hover:text-white"
+            type="button"
+            onClick={onTogglePause}
+          >
+            {isPaused ? "[play motion]" : "[pause motion]"}
+          </button>
+          <span className="text-[10px] text-emerald-400">● zsh</span>
+        </div>
       </div>
       {/* Terminal body */}
       <div

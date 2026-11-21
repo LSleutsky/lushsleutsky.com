@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router";
 
 import ParticleCanvas from "@/components/ParticleCanvas";
@@ -8,10 +9,11 @@ import useClock from "@/hooks/useClock";
 
 export default function Hero() {
   const clock = useClock();
+  const [isMotionPaused, setIsMotionPaused] = useState(false);
 
   return (
     <section className="bg-dark-950 relative min-h-screen overflow-hidden font-mono">
-      <ParticleCanvas />
+      <ParticleCanvas isPaused={isMotionPaused} />
       <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20 sm:pt-36">
         {/* Status bar */}
         <div className="relative mb-8 grid grid-cols-1 gap-2 border-b border-indigo-500/20 pb-4 text-sm sm:grid-cols-3">
@@ -20,12 +22,12 @@ export default function Hero() {
             <span className="text-emerald-400">SYSTEM ACTIVE</span>
           </div>
           <div className="flex items-center gap-2 sm:justify-center">
-            <span className="text-gray-600">LOCAL:</span>
+            <span className="text-gray-400">LOCAL:</span>
             <span suppressHydrationWarning className="font-bold tracking-wider text-emerald-400">
               {clock}
             </span>
           </div>
-          <div className="flex items-center gap-2 whitespace-nowrap text-gray-600 sm:justify-end">
+          <div className="flex items-center gap-2 whitespace-nowrap text-gray-400 sm:justify-end">
             <span>
               LOCATION: <span className="text-cyan-400">{profile.location}</span>
             </span>
@@ -82,7 +84,10 @@ export default function Hero() {
             Get In Touch
           </a>
         </div>
-        <Terminal />
+        <Terminal
+          isPaused={isMotionPaused}
+          onTogglePause={() => setIsMotionPaused(!isMotionPaused)}
+        />
       </div>
     </section>
   );

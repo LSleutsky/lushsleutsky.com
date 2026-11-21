@@ -9,7 +9,7 @@ export default function NotFoundPage() {
     <div className="pt-24 pb-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-8 border-b border-indigo-500/20 pb-4 text-sm">
-          <div className="flex items-center gap-2 whitespace-nowrap text-gray-600">
+          <div className="flex items-center gap-2 whitespace-nowrap text-gray-400">
             <span>
               STATUS: <span className="text-red-400">404</span>
             </span>

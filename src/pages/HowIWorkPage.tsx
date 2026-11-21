@@ -92,7 +92,7 @@ export default function HowIWorkPage() {
       <div className="mx-auto max-w-6xl px-6">
         {/* Page header */}
         <div className="mb-8 border-b border-indigo-500/20 pb-4 text-sm">
-          <div className="flex items-center gap-2 whitespace-nowrap text-gray-600">
+          <div className="flex items-center gap-2 whitespace-nowrap text-gray-400">
             <span>
               MODE: <span className="text-cyan-400">AI-AUGMENTED</span>
             </span>
@@ -156,7 +156,7 @@ export default function HowIWorkPage() {
             The tools change every few months. The system doesn&apos;t: clear scope, small diffs,
             enforced checks, and a human who reads everything.
           </p>
-          <p className="mb-12 text-sm text-gray-500">
+          <p className="mb-12 text-sm text-gray-400">
             Currently in the rotation: Claude Code and Codex, extended with MCP servers, custom
             subagents, skills, and hooks.
           </p>

@@ -25,13 +25,13 @@ const CONNECTION_DISTANCE = 180;
 const MOUSE_RADIUS = 200;
 const BASE_SPEED = 0.4;
 
-export default function ParticleCanvas() {
+export default function ParticleCanvas({ isPaused }: { isPaused: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
 
-    if (!canvas) {
+    if (!canvas || isPaused) {
       return;
     }
 
@@ -41,6 +41,7 @@ export default function ParticleCanvas() {
       return;
     }
 
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let animationId: number;
     let mouse = { x: -9999, y: -9999 };
     let time = 0;
@@ -185,7 +186,9 @@ export default function ParticleCanvas() {
         }
       }
 
-      animationId = requestAnimationFrame(animate);
+      if (!prefersReducedMotion) {
+        animationId = requestAnimationFrame(animate);
+      }
     };
 
     const handleMouseMove = (event: MouseEvent) => {
@@ -218,7 +221,7 @@ export default function ParticleCanvas() {
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []);
+  }, [isPaused]);
 
   return (
     <canvas
