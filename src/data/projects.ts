@@ -25,10 +25,7 @@ export const projects: Project[] = [
       "Containerized with Docker for reproducible deploys"
     ],
     tech: ["React", "React Router 7", "Tailwind CSS", "Express"],
-    liveLinks: [
-      { label: "Basements", url: "https://elitebasementsolutions.com" },
-      { label: "Remodeling", url: "https://eliteinteriorrenewals.com" }
-    ],
+    liveUrl: "https://eliteinteriorrenewals.com",
     githubUrl: "https://github.com/LSleutsky/elite-interior-renewals",
     color: "indigo"
   },
