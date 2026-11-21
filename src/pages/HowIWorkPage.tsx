@@ -12,31 +12,31 @@ const principles = [
     title: "Plan before code",
     description:
       "Anything that spans several files starts as a written plan: every file it will touch, every new file with the reason it has to exist, and an explicit list of what is out of scope. I approve it, change it, or throw it out before a line is written.",
-    rule: "Each phase leaves the build green with one behavior complete and stays under about 150 changed lines."
+    rule: "Plan first (plan mode) when the change spans several files or the approach is uncertain."
   },
   {
     title: "Nothing is assumed",
     description:
       "Models are confident about APIs that don't exist. So the agent has to find the method in the repo or in the package's own type definitions before it calls it, and it stops and asks when a schema or contract is missing.",
-    rule: "Required context missing: stop and ask. Never invent it."
+    rule: "Required context missing (schema, API shape, component contract): stop and ask. Never invent it."
   },
   {
     title: "Checks are enforced, not requested",
     description:
       "Hooks run the formatter, the linter, and the typechecker on whatever a turn changed, and the turn can't end until they pass. Asking an agent to be careful is a suggestion. A hook that blocks it is a guarantee.",
-    rule: 'Report evidence: what ran and the result. Never "should work".'
+    rule: "Hooks format, lint, and typecheck what the turn changed when it ends. Fix what they report before replying."
   },
   {
     title: "Specialists over one generalist",
     description:
       "Narrow subagents do narrow jobs. One reads other repos and returns contracts. One fetches facts from documentation and has to cite the source. One runs the tests. One reviews the finished diff cold, with no idea what I was hoping to see.",
-    rule: "Do not delegate what a few tool calls finish."
+    rule: "Subagents: `explorer` reads other repos and returns locations and contracts; `runner` runs a command with long output and returns the outcome; `researcher` fetches facts that are not in the repo."
   },
   {
     title: "I make every commit",
     description:
       "The agent never stages, commits, or pushes. It hands me a diff, the results of the checks, and a one-line commit message. I read all of it, and my name goes on the commit because the decision was mine.",
-    rule: "Before the commit message, read the diff and delete every line the task did not need."
+    rule: "Never stage, commit, or push."
   }
 ];
 
