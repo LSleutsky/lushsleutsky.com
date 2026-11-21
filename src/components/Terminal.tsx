@@ -18,15 +18,15 @@ const script: TerminalLine[] = [
   { type: "input", text: "$ uptime --career", delay: 3000 },
   { type: "output", text: "15+ years | no signs of stopping", delay: 3600 },
   { type: "input", text: "$ git log --oneline -5", delay: 4600 },
-  { type: "success", text: "a1b2c3d  feat: ship medical device BLE streaming app", delay: 5100 },
+  { type: "success", text: "9f3c1e7  feat: ship medical device BLE streaming app", delay: 5100 },
   {
     type: "success",
-    text: "e4f5g6h  feat: consolidate 3 brands into unified platform",
+    text: "4b8d02a  feat: consolidate 3 brands into unified platform",
     delay: 5400
   },
-  { type: "success", text: "i7j8k9l  feat: build tauri desktop provisioning tool", delay: 5700 },
-  { type: "success", text: "m0n1o2p  feat: launch ai-powered SaaS interfaces", delay: 6000 },
-  { type: "success", text: "q3r4s5t  feat: stand up ecommerce pipeline end-to-end", delay: 6300 },
+  { type: "success", text: "c71e5f9  feat: build tauri desktop provisioning tool", delay: 5700 },
+  { type: "success", text: "2a9b6d4  feat: launch ai-powered SaaS interfaces", delay: 6000 },
+  { type: "success", text: "e05f3c8  feat: stand up ecommerce pipeline end-to-end", delay: 6300 },
   { type: "input", text: "$ systemctl status engineer", delay: 7300 },
   { type: "success", text: "● [running] open to freelance opportunities", delay: 7900 },
   { type: "input", text: "$ _", delay: 8800 }
