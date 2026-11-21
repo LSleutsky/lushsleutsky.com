@@ -144,7 +144,8 @@ export default function HowIWorkPage() {
             enforced checks, and a human who reads everything.
           </p>
           <p className="mb-12 text-sm text-gray-500">
-            Currently in the rotation: Claude Code, Codex, GitHub Copilot, and Ollama.
+            Currently in the rotation: Claude Code and Codex, extended with MCP servers, custom
+            subagents, skills, and hooks.
           </p>
           <Contact
             message="Want to see this workflow in action on your next project? Let's build something great together!"
