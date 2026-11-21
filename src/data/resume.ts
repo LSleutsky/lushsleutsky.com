@@ -187,16 +187,16 @@ export const technicalSkills = [
 ];
 
 export const professionalSkills = [
-  "Effective Communication",
-  "Aggressive Organization",
-  "Systematic Problem Solving",
-  "Obsessive Documentation",
-  "Cross-Team Collaboration",
-  "Process Improvement",
-  "Stakeholder Engagement",
-  "Debugging & Testing",
-  "Multitasking",
-  "Time & Project Management"
+  "Architecture & Technical Direction",
+  "Leading Migrations",
+  "Cross-Team Standards",
+  "Design Systems",
+  "Code Review",
+  "Technical Documentation",
+  "Performance Engineering",
+  "Systematic Debugging",
+  "Regulated Product Delivery",
+  "Stakeholder Engagement"
 ];
 
 export const languages = [
