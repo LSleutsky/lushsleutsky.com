@@ -107,9 +107,9 @@ app.get(["/work", "/how-i-work"], (req, res) => {
   res.sendFile(path.join(req.path, "index.html"), { root: "dist/client" });
 });
 app.use(express.static("dist/client", { maxAge: "1h" }));
-// SPA fallback
+// Every known page is served above, so the SPA shell only renders the not-found route
 app.use((_, res) => {
-  res.sendFile("__spa-fallback.html", { root: "dist/client" });
+  res.status(404).sendFile("__spa-fallback.html", { root: "dist/client" });
 });
 
 app.listen(PORT, () => {
