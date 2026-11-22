@@ -24,7 +24,7 @@ export const experience: ExperienceItem[] = [
     dates: "2025 - Present",
     company: "LifeLens Technologies, Inc.",
     description:
-      "Wearable health-tech startup where I ship the software headed for FDA submission: React Native apps that talk to medical devices over BLE, a clinician web portal for sleep and cardiac data, and a Tauri provisioning suite in Rust deployed with U.S. military units.",
+      "Wearable health-tech where I ship the software headed for FDA submission: React Native apps that talk to medical devices over BLE, a clinician web portal for sleep and cardiac data, and a Tauri provisioning suite in Rust deployed with U.S. military units.",
     items: [
       "Took a greenfield React Native clinician app from empty repo to 4 FDA pilot sites in 10 weeks, covering TAVR, sleep, cardiac rehab, and cath lab workflows through Python edge APIs running on Raspberry Pi gateways at each site.",
       "Wrote a native Kotlin foreground service that refuses to die, keeping Android from killing continuous BLE sessions through 16 days of at-home TAVR patient self-monitoring.",

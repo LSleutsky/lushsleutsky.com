@@ -5,6 +5,7 @@ import TracingBeam from "@/components/TracingBeam";
 import { experience } from "@/data/resume";
 
 const title = "Experience | Lush Sleutsky";
+
 const description =
   "Work history of Lush Sleutsky: 15+ years shipping web, mobile, and cross-platform software for startups and enterprise.";
 
