@@ -45,11 +45,15 @@ export default function Hero() {
           </div>
 
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {profile.name}
+            {`Hi, I'm Lush.`}
+            <span
+              aria-hidden="true"
+              className="ml-2 inline-block h-[0.9em] w-[0.5em] animate-pulse bg-indigo-400 align-baseline"
+            />
           </h1>
 
           <p className="mx-auto max-w-2xl text-lg text-gray-400 sm:text-xl">
-            15+ years building web, mobile, and cross-platform apps for startups and enterprise
+            15+ years in. Web, mobile, desktop, and the hardware in between.
           </p>
         </div>
         {/* CTA buttons */}

@@ -200,9 +200,7 @@ export default function HowIWorkPage() {
             <span className="text-indigo-400">{`//`}</span> How the Rules Change
           </h2>
           <p className="mb-8 text-gray-400">
-            The system is never finished. I audit all of it the way I&apos;d audit a codebase: the
-            rules, the skills, the stack files, the hooks, the agents. Anything that isn&apos;t
-            making the output better comes out.
+            {`The system is never finished. I audit all of it the way I'd audit a codebase: the rules, the skills, the stack files, the hooks, the agents. Anything that isn't making the output better comes out.`}
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {ruleChanges.map((change) => (
@@ -243,8 +241,7 @@ export default function HowIWorkPage() {
         {/* Closing */}
         <section className="border-t border-indigo-500/20 py-12">
           <p className="mb-4 text-lg leading-relaxed text-gray-400">
-            The tools change every few months, the system doesn&apos;t: clear scope, small diffs,
-            enforced checks, and a human who reads everything.
+            {`The tools change every few months, the system doesn't: clear scope, small diffs, enforced checks, and a human who reads everything.`}
           </p>
           <p className="mb-12 text-sm text-gray-400">
             Currently in the rotation: Claude Code and Codex, extended with MCP servers, custom
