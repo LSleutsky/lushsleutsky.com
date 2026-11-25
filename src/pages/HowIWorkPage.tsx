@@ -73,6 +73,27 @@ const steps = [
   }
 ];
 
+const ruleChanges = [
+  {
+    title: "Every rule has a failure behind it",
+    description:
+      "Nothing is in the agreement because it sounds like good practice. A rule goes in when an agent does something wrong that one line could have stopped, and it gets worded against that exact failure. Vague rules get vague compliance.",
+    rule: '"Best practice", "clean", "robust", "production-ready", "maintainable", "future-proof", "scalable", "flexible", and "extensible" are not reasons.'
+  },
+  {
+    title: "Everything has to earn its place",
+    description:
+      "Every line an agent reads costs it attention, so the setup is held to the standard it enforces. Thirteen skills that came bundled with the tooling are switched off. The agent that runs the tests reports in 25 lines. The reviewer gets ten findings and drops any it can't prove.",
+    rule: "A new file, export, type, hook, helper, option, or layer exists only when the task cannot be done without it."
+  },
+  {
+    title: "A budget, not a request",
+    description:
+      "The agreement asks for a small diff. A hook makes it non-negotiable: a turn that adds more than 150 lines, or a third new file, can't end. The agent gets sent back to read its own diff, delete what the task didn't need, and name the requirement behind everything it keeps.",
+    rule: "The Stop hook demands this pass when a turn changes more than its budget."
+  }
+];
+
 const teamHabits = [
   {
     title: "Decisions get written down",
@@ -172,6 +193,31 @@ export default function HowIWorkPage() {
               </div>
             ))}
           </TracingBeam>
+        </section>
+        {/* Rule changes */}
+        <section className="mb-20">
+          <h2 className="mb-3 flex items-center gap-3 text-2xl font-bold text-white">
+            <span className="text-indigo-400">{`//`}</span> How the Rules Change
+          </h2>
+          <p className="mb-8 text-gray-400">
+            The system is never finished. I audit all of it the way I&apos;d audit a codebase: the
+            rules, the skills, the stack files, the hooks, the agents. Anything that isn&apos;t
+            making the output better comes out.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {ruleChanges.map((change) => (
+              <div
+                key={change.title}
+                className="border-dark-700 bg-dark-900/50 hover:border-dark-600 flex flex-col rounded-xl border p-5 transition-colors"
+              >
+                <h3 className="mb-2 font-semibold text-white">{change.title}</h3>
+                <p className="mb-4 text-sm leading-relaxed text-gray-400">{change.description}</p>
+                <p className="mt-auto border-l-2 border-emerald-500/50 pl-3 text-xs leading-relaxed text-emerald-400">
+                  {change.rule}
+                </p>
+              </div>
+            ))}
+          </div>
         </section>
         {/* Team habits */}
         <section className="mb-20">
