@@ -26,7 +26,11 @@ const script: TerminalLine[] = [
   },
   { type: "success", text: "c71e5f9  feat: build tauri desktop provisioning tool", delay: 5700 },
   { type: "success", text: "2a9b6d4  feat: launch ai-powered SaaS interfaces", delay: 6000 },
-  { type: "success", text: "e05f3c8  feat: stand up ecommerce pipeline end-to-end", delay: 6300 },
+  {
+    type: "success",
+    text: "e05f3c8  feat: rebuild legacy NFC app as offline-first field kit",
+    delay: 6300
+  },
   { type: "input", text: "$ systemctl status engineer", delay: 7300 },
   { type: "success", text: "● [running] open to freelance opportunities", delay: 7900 },
   { type: "input", text: "$ _", delay: 8800 }

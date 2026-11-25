@@ -24,15 +24,17 @@ export const experience: ExperienceItem[] = [
     dates: "2025 - Present",
     company: "LifeLens Technologies, Inc.",
     description:
-      "Wearable health-tech where I ship the software headed for FDA submission: React Native apps that talk to medical devices over BLE, a clinician web portal for sleep and cardiac data, and a Tauri provisioning suite in Rust deployed with U.S. military units.",
+      "Wearable health-tech where I ship the software headed for FDA submission: React Native apps that talk to medical devices over BLE, a clinician web portal for sleep and cardiac data, and a Tauri provisioning suite in Rust deployed with U.S. military units, and an offline-first field app that programs devices over NFC",
     items: [
       "Took a greenfield React Native clinician app from empty repo to 4 FDA pilot sites in 10 weeks, covering TAVR, sleep, cardiac rehab, and cath lab workflows through Python edge APIs running on Raspberry Pi gateways at each site.",
       "Wrote a native Kotlin foreground service that refuses to die, keeping Android from killing continuous BLE sessions through 16 days of at-home TAVR patient self-monitoring.",
       "Tracked down a silently failing SpO2 disable flag at patient discharge by reverse-engineering the peripheral firmware's 8-packet sensor config protocol, byte by byte.",
-      "Built the sleep study analytics platform for FDA submission: 8 stacked real-time physiological lanes in SciChart, custom hover sampling across 1Hz and 30-second epoch signals, and automated SVG-based PDF reports.",
+      "Built the sleep study analytics platform for FDA submission: 9 stacked real-time physiological lanes in SciChart, custom hover sampling across 1Hz and 30-second epoch signals, and automated SVG-based PDF reports.",
       "Cut the clinician web portal's initial bundle 80% (422KB to 84KB) with manual vendor chunking, lazy SciChart loading, parallel WASM preload, edge Brotli, and server-side rendering above the fold.",
       "Overhauled the Tauri desktop tool that manages U.S. military hardware fleets, adding a Rust feature flag system so each deployment gets its own custom build.",
-      "Created the WCAG-compliant Storybook design system that ships LifeLens web and React Native UI from one package."
+      "Created the WCAG-compliant Storybook design system that ships LifeLens web and React Native UI from one package.",
+      "Rebuilt a Cordova app that was one HTML page and a 1,400-line script into FieldKit, a typed, offline-first Expo app. Nothing shipped until its output matched the old app byte for byte.",
+      "Got encrypted Bluetooth pairing on Android down to a single system prompt. 8 approaches failed, and the 9th bonds before it connects, so the first thing the device hears is already encrypted."
     ],
     color: "indigo"
   },
