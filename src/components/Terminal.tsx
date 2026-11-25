@@ -44,22 +44,12 @@ const lineColor: Record<TerminalLine["type"], string> = {
   error: "text-red-400"
 };
 
-export default function Terminal({
-  isPaused,
-  onTogglePause
-}: {
-  isPaused: boolean;
-  onTogglePause: () => void;
-}) {
+export default function Terminal() {
   const [visibleCount, setVisibleCount] = useState(0);
   const bodyRef = useRef<HTMLDivElement>(null);
   const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
 
   useEffect(() => {
-    if (isPaused) {
-      return;
-    }
-
     const schedule = () => {
       timersRef.current.forEach(clearTimeout);
       timersRef.current = [];
@@ -87,7 +77,7 @@ export default function Terminal({
       clearTimeout(kickoff);
       timersRef.current.forEach(clearTimeout);
     };
-  }, [isPaused]);
+  }, []);
 
   useEffect(() => {
     if (bodyRef.current) {
@@ -107,16 +97,7 @@ export default function Terminal({
           </div>
           <span className="text-xs text-gray-400">lush@dev ~ </span>
         </div>
-        <div className="flex items-center gap-3">
-          <button
-            className="cursor-pointer px-2 py-1 text-xs text-gray-400 transition-colors hover:text-white"
-            type="button"
-            onClick={onTogglePause}
-          >
-            {isPaused ? "[play motion]" : "[pause motion]"}
-          </button>
-          <span className="text-[10px] text-emerald-400">● zsh</span>
-        </div>
+        <span className="text-[10px] text-emerald-400">● zsh</span>
       </div>
       {/* Terminal body */}
       <div

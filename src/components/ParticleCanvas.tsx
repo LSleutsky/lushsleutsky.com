@@ -25,13 +25,13 @@ const CONNECTION_DISTANCE = 180;
 const MOUSE_RADIUS = 200;
 const BASE_SPEED = 0.4;
 
-export default function ParticleCanvas({ isPaused }: { isPaused: boolean }) {
+export default function ParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
 
-    if (!canvas || isPaused) {
+    if (!canvas) {
       return;
     }
 
@@ -221,7 +221,7 @@ export default function ParticleCanvas({ isPaused }: { isPaused: boolean }) {
       canvas.removeEventListener("mousemove", handleMouseMove);
       canvas.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [isPaused]);
+  }, []);
 
   return (
     <canvas

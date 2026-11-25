@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router";
 
 import ParticleCanvas from "@/components/ParticleCanvas";
@@ -9,14 +8,13 @@ import useClock from "@/hooks/useClock";
 
 export default function Hero() {
   const clock = useClock();
-  const [isMotionPaused, setIsMotionPaused] = useState(false);
 
   return (
     <section
       className="bg-dark-950 relative min-h-screen overflow-hidden font-mono"
       data-file="index.md"
     >
-      <ParticleCanvas isPaused={isMotionPaused} />
+      <ParticleCanvas />
       <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20 sm:pt-36">
         {/* Status bar */}
         <div className="relative mb-8 grid grid-cols-1 gap-2 border-b border-indigo-500/20 pb-4 text-sm sm:grid-cols-3">
@@ -91,10 +89,7 @@ export default function Hero() {
             Get In Touch
           </a>
         </div>
-        <Terminal
-          isPaused={isMotionPaused}
-          onTogglePause={() => setIsMotionPaused(!isMotionPaused)}
-        />
+        <Terminal />
       </div>
     </section>
   );
