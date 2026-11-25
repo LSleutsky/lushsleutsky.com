@@ -54,7 +54,7 @@ export default function ContributionGraph() {
   if (error) return null;
 
   return (
-    <section className="py-20 sm:py-24">
+    <section className="py-20 sm:py-24" data-file="contributions.md">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="flex items-center gap-3 text-2xl font-bold text-white">

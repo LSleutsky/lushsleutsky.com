@@ -2,7 +2,7 @@ import { technicalSkills, professionalSkills, languages, interests } from "@/dat
 
 export default function About() {
   return (
-    <section className="relative py-20 sm:py-24">
+    <section className="relative py-20 sm:py-24" data-file="skills.md">
       <div className="mx-auto max-w-6xl px-6">
         {/* Technical Skills */}
         <div className="mb-16">

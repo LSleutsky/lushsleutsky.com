@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 export default function Showcase() {
   return (
-    <section className="py-24" id="projects">
+    <section className="py-24" data-file="projects.md" id="projects">
       <div className="mx-auto max-w-6xl px-6">
         {/* Header */}
         <div className="mb-12">

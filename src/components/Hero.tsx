@@ -12,7 +12,10 @@ export default function Hero() {
   const [isMotionPaused, setIsMotionPaused] = useState(false);
 
   return (
-    <section className="bg-dark-950 relative min-h-screen overflow-hidden font-mono">
+    <section
+      className="bg-dark-950 relative min-h-screen overflow-hidden font-mono"
+      data-file="index.md"
+    >
       <ParticleCanvas isPaused={isMotionPaused} />
       <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20 sm:pt-36">
         {/* Status bar */}

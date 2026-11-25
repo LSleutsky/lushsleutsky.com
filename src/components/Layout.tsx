@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import StatusLine from "@/components/StatusLine";
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <StatusLine />
     </div>
   );
 }
